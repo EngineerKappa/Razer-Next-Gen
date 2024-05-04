@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bu8a4gy6e5q2w"
+path="res://.godot/imported/Grab 2.WAV-e8a785299dc68fe4496b61696a166f3a.sample"
+
+[deps]
+
+source_file="res://SFX/Grab 2.WAV"
+dest_files=["res://.godot/imported/Grab 2.WAV-e8a785299dc68fe4496b61696a166f3a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

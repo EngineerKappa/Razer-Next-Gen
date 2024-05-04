@@ -1,0 +1,6 @@
+res://Levels/level_kv1.tscn
+res://Shaders/GoalRing.gdshader
+res://Objects/player.tscn
+res://Objects/EagleStatue.tscn
+res://Objects/CrumblingBridge.tscn
+res://Objects/IntroLogos.tscn

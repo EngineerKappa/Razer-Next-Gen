@@ -1,0 +1,308 @@
+[gd_scene load_steps=20 format=3 uid="uid://57xdyvmpnisj"]
+
+[ext_resource type="Script" path="res://Scripts/Interface/TitleScreen.gd" id="1_7v7oj"]
+[ext_resource type="Texture2D" uid="uid://bxrl5bl8mx2us" path="res://Graphics/Interface/TitleScreen.png" id="1_pumsm"]
+[ext_resource type="PackedScene" uid="uid://ob33nf04q6qu" path="res://Interface/IntroCrawl.tscn" id="2_fyi12"]
+[ext_resource type="FontFile" uid="uid://bylgjqlio7h4u" path="res://Themes/impact.ttf" id="2_jwa8t"]
+[ext_resource type="AudioStream" uid="uid://bgde27r5131mi" path="res://BGM/pso.ogg" id="4_rerlo"]
+[ext_resource type="Script" path="res://Scripts/Interface/ScreenFade.gd" id="5_c8v47"]
+[ext_resource type="Texture2D" uid="uid://dnlhapoheqjxf" path="res://Graphics/Particles/cloud.png" id="6_8hg3k"]
+[ext_resource type="Texture2D" uid="uid://83q1bpyo7in6" path="res://Graphics/Interface/title.png" id="7_0c4kg"]
+[ext_resource type="AudioStream" uid="uid://ba43d7q27yyp8" path="res://SFX/Menu Select.WAV" id="8_u50rm"]
+
+[sub_resource type="Curve" id="Curve_4mwae"]
+_data = [Vector2(0, 0.50442), 0.0, 0.334616, 0, 1, Vector2(0.558074, 0.69116), 0.0, 0.0, 0, 0, Vector2(1, 0.734254), 0.0975138, 0.0, 1, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_1kf1c"]
+offsets = PackedFloat32Array(0, 0.510769, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Animation" id="Animation_1gr75"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../StartBar:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Title:skew")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Title:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(152, 344)]
+}
+
+[sub_resource type="Animation" id="Animation_hui4p"]
+resource_name = "scale_animation"
+length = 2.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(3, 3), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../StartBar:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(1.1, 1.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1, 0), Vector2(1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../Title:skew")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.6, 1, 1.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.476475, 0.71384, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../Title:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.8, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-176, 344), Vector2(152, 344)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("..:press_start_allowed")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 1.1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_voa7y"]
+_data = {
+"RESET": SubResource("Animation_1gr75"),
+"scale_animation": SubResource("Animation_hui4p")
+}
+
+[sub_resource type="LabelSettings" id="LabelSettings_fjasl"]
+font = ExtResource("2_jwa8t")
+font_size = 30
+
+[sub_resource type="Animation" id="Animation_fp4mf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StartBar/PressStart:label_settings:font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("StartBar/PressStart:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_3dufg"]
+resource_name = "Title"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StartBar/PressStart:label_settings:font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 1, 1, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_dnh7h"]
+resource_name = "pressed"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("StartBar/PressStart:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8800m"]
+_data = {
+"RESET": SubResource("Animation_fp4mf"),
+"Title": SubResource("Animation_3dufg"),
+"pressed": SubResource("Animation_dnh7h")
+}
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7v7oj")
+next_scene = ExtResource("2_fyi12")
+
+[node name="TitleScreen" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+texture = ExtResource("1_pumsm")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+position = Vector2(480, 320)
+amount = 60
+lifetime = 4.0
+randomness = 0.45
+lifetime_randomness = 0.45
+texture = ExtResource("6_8hg3k")
+emission_shape = 3
+emission_rect_extents = Vector2(320, 240)
+direction = Vector2(-1, -1)
+spread = 37.26
+gravity = Vector2(0, 0)
+initial_velocity_min = 45.11
+initial_velocity_max = 330.06
+angular_velocity_max = 30.97
+scale_amount_min = 0.0
+scale_amount_max = 3.5
+scale_amount_curve = SubResource("Curve_4mwae")
+color_ramp = SubResource("Gradient_1kf1c")
+
+[node name="ScaleAnimation" type="AnimationPlayer" parent="."]
+root_node = NodePath("../TitleScreen")
+libraries = {
+"": SubResource("AnimationLibrary_voa7y")
+}
+autoplay = "scale_animation"
+
+[node name="StartBar" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 408.0
+offset_right = 752.0
+offset_bottom = 448.0
+color = Color(0, 0, 0, 0.631373)
+
+[node name="PressStart" type="Label" parent="StartBar"]
+layout_mode = 0
+offset_left = 520.0
+offset_right = 729.0
+offset_bottom = 38.0
+text = "Press Start/Enter"
+label_settings = SubResource("LabelSettings_fjasl")
+
+[node name="PressStartAnimation" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_8800m")
+}
+autoplay = "Title"
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rerlo")
+autoplay = true
+
+[node name="FadeIn" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_c8v47")
+target_color = Color(0, 0, 0, 0)
+start_color = Color(0, 0, 0, 1)
+time_to_fade = 0.2
+free_on_finish = true
+
+[node name="Title" type="Sprite2D" parent="."]
+position = Vector2(152, 344)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("7_0c4kg")
+
+[node name="SfxPressed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_u50rm")
+volume_db = -4.0
+
+[node name="FadeOut" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("5_c8v47")
+target_color = Color(1, 1, 1, 1)
+enabled = false
+hang_time = 1.0
+
+[connection signal="fade_finish" from="FadeOut" to="." method="_on_fade_out_fade_finish"]

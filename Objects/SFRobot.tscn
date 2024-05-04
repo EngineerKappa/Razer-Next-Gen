@@ -1,0 +1,104 @@
+[gd_scene load_steps=14 format=3 uid="uid://dqs82xgxxwqal"]
+
+[ext_resource type="Script" path="res://Scripts/Enemies/Enemy.gd" id="1_prtmu"]
+[ext_resource type="Texture2D" uid="uid://co2fcqhjwj0rl" path="res://Graphics/Objects/Levels/Purple Palace/robot.png" id="2_50fui"]
+[ext_resource type="Script" path="res://Scripts/Enemies/HitboxHazard.gd" id="4_5vs6c"]
+[ext_resource type="Script" path="res://Scripts/Shared/Gravity.gd" id="5_l66sr"]
+[ext_resource type="Script" path="res://Scripts/Shared/StateMachine.gd" id="6_6epct"]
+[ext_resource type="Script" path="res://Scripts/Enemies/EnemyPatrol.gd" id="7_sronq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ka8tk"]
+size = Vector2(24, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y20ry"]
+atlas = ExtResource("2_50fui")
+region = Rect2(0, 0, 26, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4x3l"]
+atlas = ExtResource("2_50fui")
+region = Rect2(26, 0, 26, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1b2p0"]
+atlas = ExtResource("2_50fui")
+region = Rect2(52, 0, 26, 31)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2dwql"]
+atlas = ExtResource("2_50fui")
+region = Rect2(78, 0, 26, 31)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j7y5e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y20ry")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4x3l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1b2p0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2dwql")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ugr0"]
+size = Vector2(32, 34)
+
+[node name="SFRobot" type="CharacterBody2D" node_paths=PackedStringArray("animation")]
+collision_layer = 0
+script = ExtResource("1_prtmu")
+direction = 1
+animation = NodePath("Animation")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -11)
+shape = SubResource("RectangleShape2D_ka8tk")
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -13)
+sprite_frames = SubResource("SpriteFrames_j7y5e")
+autoplay = "default"
+frame_progress = 0.322491
+
+[node name="Area2D" type="Area2D" parent="." node_paths=PackedStringArray("hazard_object")]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("4_5vs6c")
+hazard_object = NodePath("..")
+damage_type = "Badnik"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -15)
+shape = SubResource("RectangleShape2D_8ugr0")
+debug_color = Color(1, 0, 0, 0.509804)
+
+[node name="Gravity" type="Node" parent="." node_paths=PackedStringArray("parent")]
+script = ExtResource("5_l66sr")
+parent = NodePath("..")
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("parent", "default_state")]
+script = ExtResource("6_6epct")
+parent = NodePath("..")
+default_state = NodePath("EnemyPatrol")
+
+[node name="EnemyPatrol" type="Node" parent="StateMachine" node_paths=PackedStringArray("gravity", "animation", "raycast_left", "raycast_right", "parent")]
+script = ExtResource("7_sronq")
+move_speed = 180
+gravity = NodePath("../../Gravity")
+animation = NodePath("../../Animation")
+raycast_left = NodePath("../../RayCastLeft")
+raycast_right = NodePath("../../RayCastRight")
+parent = NodePath("../..")
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(-24, 0)
+target_position = Vector2(0, 20)
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(24, 0)
+target_position = Vector2(0, 20)

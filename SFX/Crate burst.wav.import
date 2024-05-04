@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bgahn73sjmnxw"
+path="res://.godot/imported/Crate burst.wav-8f1c9654c1bb9d4a9d85cc8b3444f4eb.sample"
+
+[deps]
+
+source_file="res://SFX/Crate burst.wav"
+dest_files=["res://.godot/imported/Crate burst.wav-8f1c9654c1bb9d4a9d85cc8b3444f4eb.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

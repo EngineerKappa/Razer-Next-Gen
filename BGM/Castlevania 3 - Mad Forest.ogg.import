@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://1ve12wshwme7"
+path="res://.godot/imported/Castlevania 3 - Mad Forest.ogg-70345e052616bbc26d73725db02ed365.oggvorbisstr"
+
+[deps]
+
+source_file="res://BGM/Castlevania 3 - Mad Forest.ogg"
+dest_files=["res://.godot/imported/Castlevania 3 - Mad Forest.ogg-70345e052616bbc26d73725db02ed365.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

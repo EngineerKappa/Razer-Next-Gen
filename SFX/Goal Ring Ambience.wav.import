@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://duq4enbbuc0ba"
+path="res://.godot/imported/Goal Ring Ambience.wav-d9b0b35f371f345cbedabbc0e1c5c75f.sample"
+
+[deps]
+
+source_file="res://SFX/Goal Ring Ambience.wav"
+dest_files=["res://.godot/imported/Goal Ring Ambience.wav-d9b0b35f371f345cbedabbc0e1c5c75f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=3
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bwarasouc14df"]
+
+[ext_resource type="Script" path="res://Scripts/Enemies/HitboxHazard.gd" id="1_toa2j"]
+[ext_resource type="Texture2D" uid="uid://ev7yigbpu352" path="res://Graphics/Objects/Spike Ball.png" id="2_ulfik"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b2ekf"]
+radius = 16.0
+
+[node name="SpikeBall" type="Area2D"]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("1_toa2j")
+damage_type = "Spikes"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_ulfik")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_b2ekf")
+debug_color = Color(0.701961, 0, 0, 0.419608)

@@ -1,0 +1,307 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1707660783
+export_presets.cfg::TextFile::-1::1706431636::0::1::::<><>::
+icon.svg::CompressedTexture2D::4440897639601849400::1704603786::1704603797::1::::<><>::
+RainbowRing.gd::GDScript::-1::1706319892::0::1::::<>Area2D<>::
+TitleScreen.tscn::PackedScene::2173128539053314853::1706228131::0::1::::<><>::res://Scripts/Interface/TitleScreen.gd<>uid://bxrl5bl8mx2us::::res://Graphics/Interface/TitleScreen.png<>uid://ob33nf04q6qu::::res://Interface/IntroCrawl.tscn<>uid://bylgjqlio7h4u::::res://Themes/impact.ttf<>uid://bgde27r5131mi::::res://BGM/pso.ogg<>res://Scripts/Interface/ScreenFade.gd<>uid://dnlhapoheqjxf::::res://Graphics/Particles/cloud.png<>uid://83q1bpyo7in6::::res://Graphics/Interface/title.png<>uid://ba43d7q27yyp8::::res://SFX/Menu Select.WAV
+::res://BGM/::1706136065
+Castlevania 3 - Mad Forest.ogg::AudioStreamOggVorbis::1868552618980912184::1704619887::1704690136::1::::<><>::
+GM_20_LRZ_2_HPZ.ogg::AudioStreamOggVorbis::7893397556538575311::1705790431::1705791854::1::::<><>::
+pso.ogg::AudioStreamOggVorbis::2814039671597790856::1704681047::1704690113::1::::<><>::
+SMC_Options_Extras-KM.ogg::AudioStreamOggVorbis::2697917373132737488::1706133591::1706136065::1::::<><>::
+Sonic Adventure 2 - Sonic vs Shadow.ogg::AudioStreamOggVorbis::6251761460607605344::1704681146::1704690140::1::::<><>::
+Sonic Adventure - Invincibility.ogg::AudioStreamOggVorbis::8770842572209000525::1704681330::1704690152::1::::<><>::
+Sonic Adventure - Round Clear.ogg::AudioStreamOggVorbis::5356603549873778407::1704681342::1704690157::1::::<><>::
+Sonic Adventure - Speed Highway.ogg::AudioStreamOggVorbis::1903611700496237662::1704680900::1704690160::1::::<><>::
+Sonic the Hedgehog (2006) - His World.ogg::AudioStreamOggVorbis::468069331916700437::1704680525::1704690113::1::::<><>::
+Sonic the Hedgehog (2006) - Kingdom Valley ~ The Wind.ogg::AudioStreamOggVorbis::6932239916262665067::1704680577::1704690114::1::::<><>::
+Sonic the Hedgehog (2006) - Kingdom Valley ~ Water.ogg::AudioStreamOggVorbis::7310497886038453387::1704680606::1704690166::1::::<><>::
+Sonic the Hedgehog (2006) - Town Mission 04.ogg::AudioStreamOggVorbis::5137713081592310158::1704680781::1704690170::1::::<><>::
+STH-Marble_GoodFutureRemix.ogg::AudioStreamOggVorbis::4862434501474572373::1704681475::1704690174::1::::<><>::
+Twinbee Rainbow Bell Adventure - Next Destination.ogg::AudioStreamOggVorbis::6390752205517458590::1704680979::1704690177::1::::<><>::
+::res://Graphics/::1704995040
+::res://Graphics/Cutscenes/::1705793172
+Dark Gaia.png::CompressedTexture2D::5605914702374793217::1704996719::1704999249::1::::<><>::
+Intro White Space.png::CompressedTexture2D::3446594081038620292::1705775841::1705776449::1::::<><>::
+Razer vs Silver.png::CompressedTexture2D::7770147534513458098::1705787528::1705791854::1::::<><>::
+Scruffy 1 featuring Razer.png::CompressedTexture2D::1931991970506582007::1705792823::1705793172::1::::<><>::
+Solaris.png::CompressedTexture2D::376509664107396691::1704995059::1704999249::1::::<><>::
+Time Eater.png::CompressedTexture2D::5797803739040115342::1704997965::1704999249::1::::<><>::
+::res://Graphics/Enemies/::1705456244
+Egg Flyer.png::CompressedTexture2D::2246334998810247539::1705456265::1705456244::1::::<><>::
+Gunner Bullet.png::CompressedTexture2D::7525883917854122463::1705348083::1705348088::1::::<><>::
+Gunner Gun.png::CompressedTexture2D::990257955513125957::1705339053::1705339060::1::::<><>::
+gunner.png::CompressedTexture2D::3848001290974564782::1705339011::1705339060::1::::<><>::
+Liner.png::CompressedTexture2D::2590765664925771456::1704793388::1704793391::1::::<><>::
+::res://Graphics/Interface/::1705988294
+EngineerKappa.png::CompressedTexture2D::7425097851577112815::1705085486::1705085493::1::::<><>::
+MainMenu.png::CompressedTexture2D::3969807001325843369::1705988292::1705988294::1::::<><>::
+Ring.png::CompressedTexture2D::9064187813889221221::1704989666::1704989675::1::::<><>::
+Sega.png::CompressedTexture2D::2810084366903855018::1705085930::1705085935::1::::<><>::
+Soft step.WAV::AudioStreamWAV::1439296507014328470::1705087979::1705087979::1::::<><>::
+Sonic Team.png::CompressedTexture2D::4745259023747704363::1705085796::1705085935::1::::<><>::
+title.png::CompressedTexture2D::2375052396500375833::1705095947::1705095949::1::::<><>::
+TitleScreen.png::CompressedTexture2D::4036580040956979710::1705079284::1705081060::1::::<><>::
+::res://Graphics/Objects/::1706389080
+BounceVine.png::CompressedTexture2D::4321660786980998175::1706389062::1706389080::1::::<><>::
+crate debris.png::CompressedTexture2D::7484891201038362564::1705621492::1705621495::1::::<><>::
+crate.png::CompressedTexture2D::4918381798753416726::1705636276::1705621495::1::::<><>::
+Goal Ring.png::CompressedTexture2D::8102529495697931864::1705001491::1705001493::1::::<><>::
+Item Box Card.png::CompressedTexture2D::7082437455681253607::1705151150::1705151200::1::::<><>::
+Item Box.png::CompressedTexture2D::6646440860060116492::1705150707::1705150708::1::::<><>::
+RainbowRing.png::CompressedTexture2D::4304337745153974164::1706316326::1706316327::1::::<><>::
+Ring.png::CompressedTexture2D::8542741398937341664::1704702988::1704702990::1::::<><>::
+signpost hand.png::CompressedTexture2D::5780954848771930147::1705766252::1705766322::1::::<><>::
+signpost.png::CompressedTexture2D::8540438934941424649::1705766292::1705766322::1::::<><>::
+Spike Ball Pivot.png::CompressedTexture2D::3792052211277057085::1705236370::1705236371::1::::<><>::
+Spike Ball.png::CompressedTexture2D::326093539731556791::1705232726::1705233257::1::::<><>::
+spikes.png::CompressedTexture2D::1992713054874928883::1704786588::1704786589::1::::<><>::
+Spring.png::CompressedTexture2D::2827517985158905555::1705565121::1705565132::1::::<><>::
+starpost base.png::CompressedTexture2D::8579506895721000842::1705501574::1705501575::1::::<><>::
+Starpost Pole.png::CompressedTexture2D::7709446618205078943::1705500312::1705500411::1::::<><>::
+::res://Graphics/Objects/Crate Debris/::1705636275
+crate1.png::CompressedTexture2D::2205268606788537244::1705636253::1705636275::1::::<><>::
+crate2.png::CompressedTexture2D::220609996974512435::1705636251::1705636275::1::::<><>::
+crate3.png::CompressedTexture2D::7610471737029877362::1705636243::1705636275::1::::<><>::
+crate4.png::CompressedTexture2D::5296821278179916006::1705636269::1705636275::1::::<><>::
+crate5.png::CompressedTexture2D::8778592500115641940::1705636267::1705636275::1::::<><>::
+crate6.png::CompressedTexture2D::4724775979989201171::1705636265::1705636275::1::::<><>::
+crate7.png::CompressedTexture2D::6904061315261208847::1705636263::1705636275::1::::<><>::
+crate8.png::CompressedTexture2D::6200482133047653496::1705636261::1705636275::1::::<><>::
+crate9.png::CompressedTexture2D::8232548433420714642::1705636260::1705636275::1::::<><>::
+crate10.png::CompressedTexture2D::947606260806819155::1705636258::1705636275::1::::<><>::
+crate11.png::CompressedTexture2D::8833226465686657014::1705636256::1705636275::1::::<><>::
+crate12.png::CompressedTexture2D::4890830183423390747::1705636255::1705636275::1::::<><>::
+::res://Graphics/Objects/Levels/::1706417902
+brick pile.png::CompressedTexture2D::1257227483017366360::1705648748::1705648750::1::::<><>::
+EagleStatue.png::CompressedTexture2D::6293725735414664431::1706393490::1706393491::1::::<><>::
+EagleStatueOrb.png::CompressedTexture2D::708248388296402112::1706393424::1706393426::1::::<><>::
+EagleStatueSwitch.png::CompressedTexture2D::7830000982883561652::1706393232::1706393426::1::::<><>::
+kv_platform2.png::CompressedTexture2D::8250107071149890398::1706298272::1706298274::1::::<><>::
+kv_platform.png::CompressedTexture2D::1538840952396259580::1705172593::1705172597::1::::<><>::
+kv_platform_cracked.png::CompressedTexture2D::3213771136042168966::1705173088::1705173209::1::::<><>::
+kv_sky.png::CompressedTexture2D::2484646711521446095::1704618106::1704785221::1::::<><>::
+kv_tiles.png::CompressedTexture2D::4976131008600317011::1706417900::1706417902::1::::<><>::
+kv_water.png::CompressedTexture2D::8233336778517046553::1704700579::1704785221::1::::<><>::
+pillar.png::CompressedTexture2D::2514543181870109078::1705646580::1705646585::1::::<><>::
+torch2.png::CompressedTexture2D::4471534633921772341::1706302308::1706302310::1::::<><>::
+torch.png::CompressedTexture2D::8362488694242243720::1705647751::1705647755::1::::<><>::
+tree.png::CompressedTexture2D::3941273876562132401::1705644578::1705644593::1::::<><>::
+vines.png::CompressedTexture2D::1776621442820188795::1705649328::1705649332::1::::<><>::
+WindPlatform.png::CompressedTexture2D::8645264412631923348::1706399428::1706399432::1::::<><>::
+wirl1.png::CompressedTexture2D::5115688912464599981::1704700909::1704785221::1::::<><>::
+::res://Graphics/Objects/Levels/Purple Palace/::1705595426
+ashar.png::CompressedTexture2D::5145261490483503696::1705264890::1705287593::1::::<><>::
+cinge dead.png::CompressedTexture2D::3834924990762350108::1705271866::1705278881::1::::<><>::
+cinge.png::CompressedTexture2D::540885446781705157::1705271803::1705278880::1::::<><>::
+exit.png::CompressedTexture2D::6072414288594448170::1705265145::1705266227::1::::<><>::
+fireball.png::CompressedTexture2D::3079424968327488333::1705265905::1705266227::1::::<><>::
+Level1.png::CompressedTexture2D::4715404028420594646::1705265687::1705282350::1::::<><>::
+Level2.png::CompressedTexture2D::604708198070841250::1705265703::1705282350::1::::<><>::
+Level3.png::CompressedTexture2D::2939939073870793684::1705265717::1705282350::1::::<><>::
+nipper.png::CompressedTexture2D::4574952229303243936::1705271543::1705278880::1::::<><>::
+pp_bg.png::CompressedTexture2D::4204780197033743624::1705285799::1705285813::1::::<><>::
+pp_tiles.png::CompressedTexture2D::8380457460408830137::1705595424::1705595426::1::::<><>::
+rm_B1.png::CompressedTexture2D::1583491018401145067::1705265722::1705282350::1::::<><>::
+robot.png::CompressedTexture2D::5811531385855846201::1705271417::1705278880::1::::<><>::
+::res://Graphics/Particles/::1705650504
+circle.png::CompressedTexture2D::4266776732074994239::1704697127::1704697342::1::::<><>::
+cloud.png::CompressedTexture2D::8094851002419294295::1704696933::1704697218::1::::<><>::
+explosion.png::CompressedTexture2D::5451524293297517969::1704696886::1704697218::1::::<><>::
+flare.png::CompressedTexture2D::1141934555381953587::1704697006::1704697218::1::::<><>::
+Rain.png::CompressedTexture2D::1751709253658388990::1705650502::1705650504::1::::<><>::
+ring.png::CompressedTexture2D::14124834372145116::1704696847::1704697218::1::::<><>::
+smoke.png::CompressedTexture2D::735767265157947060::1704696978::1704697218::1::::<><>::
+spark.png::CompressedTexture2D::3913084898894689095::1704696903::1704697218::1::::<><>::
+sphere.png::CompressedTexture2D::6972243190706396884::1704696808::1704697218::1::::<><>::
+star.png::CompressedTexture2D::7739802721178051987::1704697089::1704697218::1::::<><>::
+::res://Graphics/Razer/::1704877283
+razer.png::CompressedTexture2D::6592705150798807442::1704619301::1704619302::1::::<><>::
+razer_sheet.png::CompressedTexture2D::1529838936749309051::1704877270::1704877283::1::::<><>::
+::res://Interface/::1706467868
+CingeCrawl.tscn::PackedScene::5078362892865730236::1705872134::0::1::::<><>::res://Scripts/Interface/TitleScreen.gd<>uid://57xdyvmpnisj::::res://TitleScreen.tscn<>uid://2r4vjcemxqyp::::res://Graphics/Cutscenes/Scruffy 1 featuring Razer.png<>uid://cxby0w6n1j5r3::::res://BGM/Twinbee Rainbow Bell Adventure - Next Destination.ogg<>uid://ba43d7q27yyp8::::res://SFX/Menu Select.WAV<>uid://cnxedrvkfma8u::::res://Themes/comic.ttf<>res://Interface/TextCrawl.gd<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>res://Scripts/Interface/ScreenFade.gd
+CutsceneScroll.gd::GDScript::-1::1705796012::0::1::::<>Control<>::
+IntroCrawl.tscn::PackedScene::986458958416189792::1705871081::0::1::::<><>::res://Scripts/Interface/TitleScreen.gd<>uid://d15ixphwtdv47::::res://Levels/level_kv1.tscn<>res://Scripts/Interface/ScreenFade.gd<>uid://bpds5vrmvpeoq::::res://Graphics/Cutscenes/Intro White Space.png<>res://Interface/TextCrawl.gd<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://dkpvds2581544::::res://BGM/GM_20_LRZ_2_HPZ.ogg<>uid://cnxedrvkfma8u::::res://Themes/comic.ttf<>uid://ba43d7q27yyp8::::res://SFX/Menu Select.WAV
+Label_Menu.tres::LabelSettings::5483484729702531416::1705987406::0::1::::<><>::uid://bylgjqlio7h4u::::res://Themes/impact.ttf
+MainMenu.gd::GDScript::-1::1706139185::0::1::::<>Control<>::
+MainMenu.tscn::PackedScene::8568738006953935517::1706145939::0::1::::<><>::res://Interface/MainMenu.gd<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://0cfo1escar4o::::res://Interface/Theme_Menu.tres<>res://Scripts/Interface/ScreenFade.gd<>uid://bwtae2mjmfodd::::res://Graphics/Interface/MainMenu.png<>uid://beo5kmslqtylc::::res://BGM/SMC_Options_Extras-KM.ogg<>uid://ba43d7q27yyp8::::res://SFX/Menu Select.WAV<>uid://c8mjfb07nr4nr::::res://SFX/Menu Beep.WAV
+SilverCrawl.tscn::PackedScene::4171352458518463073::1705872356::0::1::::<><>::res://Scripts/Interface/TitleScreen.gd<>uid://bt65qut72ldug::::res://Levels/level_pp.tscn<>uid://dix6gva7cjp11::::res://Graphics/Cutscenes/Razer vs Silver.png<>uid://gw0be0d2f0yj::::res://BGM/Sonic the Hedgehog (2006) - His World.ogg<>uid://ba43d7q27yyp8::::res://SFX/Menu Select.WAV<>uid://cnxedrvkfma8u::::res://Themes/comic.ttf<>res://Interface/TextCrawl.gd<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>res://Scripts/Interface/ScreenFade.gd
+TextCrawl.gd::GDScript::-1::1705800896::0::1::::<>Label<>::
+Theme_Menu.tres::Theme::1759179805144282380::1706467868::0::1::::<><>::uid://bylgjqlio7h4u::::res://Themes/impact.ttf
+::res://Levels/::1707659605
+level_kv1.tscn::PackedScene::9046630927180878742::1707659605::0::1::::<><>::res://Scripts/Level.gd<>uid://c51a8jjg8y0yh::::res://BGM/Sonic the Hedgehog (2006) - Kingdom Valley ~ The Wind.ogg<>uid://cc1ivq2r0i52h::::res://Objects/hud.tscn<>uid://cbc0ae2sn7j0v::::res://Objects/ScreenFade.tscn
+level_pp.tscn::PackedScene::3785855586985779586::1706318187::0::1::::<><>::res://Scripts/Level.gd<>uid://cbjnt6hoabtht::::res://BGM/STH-Marble_GoodFutureRemix.ogg<>uid://cc1ivq2r0i52h::::res://Objects/hud.tscn<>uid://cbc0ae2sn7j0v::::res://Objects/ScreenFade.tscn
+room_kv1a.tscn::PackedScene::1496053326133438879::1706305948::0::1::::<><>::res://Scripts/Room.gd<>uid://cgsqyjw3b4yce::::res://Tilesets/KingdomValley.tres<>uid://bwfgg75frtlnd::::res://Graphics/Objects/Levels/tree.png<>uid://bbnt1eglqbg7p::::res://Graphics/Objects/Levels/kv_sky.png<>uid://r6amaa25682g::::res://Graphics/Objects/Levels/brick pile.png<>uid://bb3cfnuq7wiyw::::res://Graphics/Objects/Levels/pillar.png<>uid://dpkj4bbgu1do8::::res://Graphics/Objects/Levels/kv_water.png<>uid://ib82oqwofxlr::::res://Objects/kv_torch.tscn<>uid://djtcvometdy07::::res://Objects/Ring.tscn<>uid://q8tmiru1vhq4::::res://Objects/Spring.tscn<>uid://cgd1rflgpgmjb::::res://Objects/EggLiner.tscn<>uid://dm1tuobfgeiku::::res://Objects/CrumblingBridge.tscn<>uid://b6mwnyiip3nlr::::res://Objects/ItemBox.tscn<>uid://cjh7o5ndwc2yh::::res://Objects/EggFlyer.tscn<>uid://757w6xh81n80::::res://Objects/crate.tscn<>uid://4d2kvfifs8fk::::res://Objects/player.tscn<>uid://c3ec30188yckd::::res://Objects/Spikes.tscn<>uid://0gq1jim03j64::::res://Objects/EggGunner.tscn<>uid://b53s85nj3ix3q::::res://Objects/Checkpoint.tscn<>uid://0kuxwdxpl12v::::res://Graphics/Objects/Levels/vines.png<>uid://c6ln3dwmhxbbg::::res://Graphics/Particles/sphere.png<>uid://y7snpf66x6ji::::res://Graphics/Particles/Rain.png<>uid://dm8eaea38lkll::::res://Objects/SpikePivot.tscn<>res://Scripts/Objects/AreaTransition.gd<>uid://b58joden3eqgp::::res://Objects/Signpost.tscn
+room_kv1b.tscn::PackedScene::35275963078470408::1706395990::0::1::::<><>::res://Scripts/Room.gd<>uid://bpdvbmdjwrc2c::::res://Objects/kv_torch2.tscn<>uid://dm8eaea38lkll::::res://Objects/SpikePivot.tscn<>uid://b6mwnyiip3nlr::::res://Objects/ItemBox.tscn<>uid://0gq1jim03j64::::res://Objects/EggGunner.tscn<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://ib82oqwofxlr::::res://Objects/kv_torch.tscn<>uid://cgsqyjw3b4yce::::res://Tilesets/KingdomValley.tres<>uid://q8tmiru1vhq4::::res://Objects/Spring.tscn<>uid://bbnt1eglqbg7p::::res://Graphics/Objects/Levels/kv_sky.png<>uid://dpkj4bbgu1do8::::res://Graphics/Objects/Levels/kv_water.png<>uid://757w6xh81n80::::res://Objects/crate.tscn<>uid://djtcvometdy07::::res://Objects/Ring.tscn<>uid://i67a2gy23vc8::::res://Objects/kv_platform.tscn<>uid://cjh7o5ndwc2yh::::res://Objects/EggFlyer.tscn<>uid://c6vnq7o3bn80a::::res://Objects/bounce_floor.tscn<>res://Scripts/Objects/InstancePivot.gd<>uid://cgd1rflgpgmjb::::res://Objects/EggLiner.tscn<>uid://c3ec30188yckd::::res://Objects/Spikes.tscn<>uid://b53s85nj3ix3q::::res://Objects/Checkpoint.tscn<>uid://4d2kvfifs8fk::::res://Objects/player.tscn<>uid://b58joden3eqgp::::res://Objects/Signpost.tscn<>res://Scripts/Objects/AreaTransition.gd<>uid://c6ln3dwmhxbbg::::res://Graphics/Particles/sphere.png
+room_kv1c.tscn::PackedScene::8203680773326634090::1706605809::0::1::::<><>::res://Scripts/Room.gd<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://bbnt1eglqbg7p::::res://Graphics/Objects/Levels/kv_sky.png<>uid://0gq1jim03j64::::res://Objects/EggGunner.tscn<>res://Scripts/Objects/InstancePivot.gd<>uid://dpkj4bbgu1do8::::res://Graphics/Objects/Levels/kv_water.png<>uid://dm8eaea38lkll::::res://Objects/SpikePivot.tscn<>uid://cgsqyjw3b4yce::::res://Tilesets/KingdomValley.tres<>uid://c41lb4kwl3gug::::res://Objects/rainbow_ring.tscn<>uid://c41tjlfknnj6v::::res://Objects/EagleStatue.tscn<>uid://djtcvometdy07::::res://Objects/Ring.tscn<>uid://cpel7lh0h4hce::::res://Objects/wind_platform.tscn<>uid://c3ec30188yckd::::res://Objects/Spikes.tscn<>uid://757w6xh81n80::::res://Objects/crate.tscn<>uid://b6mwnyiip3nlr::::res://Objects/ItemBox.tscn<>uid://dm1tuobfgeiku::::res://Objects/CrumblingBridge.tscn<>uid://c6vnq7o3bn80a::::res://Objects/bounce_floor.tscn<>uid://cjh7o5ndwc2yh::::res://Objects/EggFlyer.tscn<>uid://o5l5dgom1i1h::::res://Objects/GoalRing.tscn<>uid://cgd1rflgpgmjb::::res://Objects/EggLiner.tscn<>uid://q8tmiru1vhq4::::res://Objects/Spring.tscn<>uid://b53s85nj3ix3q::::res://Objects/Checkpoint.tscn<>uid://c6ln3dwmhxbbg::::res://Graphics/Particles/sphere.png<>uid://4d2kvfifs8fk::::res://Objects/player.tscn<>uid://y7snpf66x6ji::::res://Graphics/Particles/Rain.png
+room_pp1.tscn::PackedScene::7095444029934672548::1705892970::0::1::::<><>::res://Scripts/Room.gd<>uid://b053d6smj7rqu::::res://Graphics/Objects/Levels/Purple Palace/pp_bg.png<>res://Scripts/Shared/RectScroll.gd<>uid://il60122kmqec::::res://Tilesets/PurplePalace.tres<>uid://dm8eaea38lkll::::res://Objects/SpikePivot.tscn<>uid://djtcvometdy07::::res://Objects/Ring.tscn<>uid://b6mwnyiip3nlr::::res://Objects/ItemBox.tscn<>uid://dqs82xgxxwqal::::res://Objects/SFRobot.tscn<>uid://dfi0o3immsvi6::::res://Objects/SFNipper.tscn<>uid://d6ean7pkovge::::res://Objects/SFFlame.tscn<>uid://b53s85nj3ix3q::::res://Objects/Checkpoint.tscn<>uid://4d2kvfifs8fk::::res://Objects/player.tscn<>uid://d03ggbjntx1vf::::res://Objects/StickyDoor.tscn
+room_pp2.tscn::PackedScene::5701044987913094334::1706228131::0::1::::<><>::res://Scripts/Room.gd<>uid://b053d6smj7rqu::::res://Graphics/Objects/Levels/Purple Palace/pp_bg.png<>res://Scripts/Shared/RectScroll.gd<>uid://iu6pq01tp843::::res://Graphics/Objects/Levels/Purple Palace/Level2.png<>uid://il60122kmqec::::res://Tilesets/PurplePalace.tres<>uid://d6ean7pkovge::::res://Objects/SFFlame.tscn<>uid://djtcvometdy07::::res://Objects/Ring.tscn<>uid://b6mwnyiip3nlr::::res://Objects/ItemBox.tscn<>uid://dqs82xgxxwqal::::res://Objects/SFRobot.tscn<>uid://dfi0o3immsvi6::::res://Objects/SFNipper.tscn<>uid://c3ec30188yckd::::res://Objects/Spikes.tscn<>uid://b53s85nj3ix3q::::res://Objects/Checkpoint.tscn<>uid://4d2kvfifs8fk::::res://Objects/player.tscn<>uid://dm8eaea38lkll::::res://Objects/SpikePivot.tscn<>uid://d03ggbjntx1vf::::res://Objects/StickyDoor.tscn
+room_pp3.tscn::PackedScene::3437919554488047071::1705870439::0::1::::<><>::res://Scripts/Room.gd<>uid://b053d6smj7rqu::::res://Graphics/Objects/Levels/Purple Palace/pp_bg.png<>res://Scripts/Shared/RectScroll.gd<>uid://bh5emqjg6wcbk::::res://Graphics/Objects/Levels/Purple Palace/Level3.png<>uid://il60122kmqec::::res://Tilesets/PurplePalace.tres<>uid://djtcvometdy07::::res://Objects/Ring.tscn<>uid://b6mwnyiip3nlr::::res://Objects/ItemBox.tscn<>uid://dqs82xgxxwqal::::res://Objects/SFRobot.tscn<>uid://dfi0o3immsvi6::::res://Objects/SFNipper.tscn<>uid://o5l5dgom1i1h::::res://Objects/GoalRing.tscn<>uid://dm8eaea38lkll::::res://Objects/SpikePivot.tscn<>uid://d6ean7pkovge::::res://Objects/SFFlame.tscn<>uid://4d2kvfifs8fk::::res://Objects/player.tscn<>uid://b53s85nj3ix3q::::res://Objects/Checkpoint.tscn<>uid://0gq1jim03j64::::res://Objects/EggGunner.tscn
+::res://Objects/::1707659605
+AreaTransition.tscn::PackedScene::1531653844660540080::1706231581::0::1::::<><>::res://Scripts/Objects/AreaTransition.gd
+BadnikExplosion.tscn::PackedScene::1293977198761900718::1705651753::0::1::::<><>::uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres<>res://Scripts/Enemies/BadnikExplosion.gd<>uid://04c5f5e6wk57::::res://SFX/Badnik Explosion.WAV<>uid://qjfq3s20dr0v::::res://Graphics/Particles/flare.png
+bounce_floor.tscn::PackedScene::6992867050257448270::1706303504::0::1::::<><>::res://Scripts/Objects/BounceFloor.gd<>uid://b2tpee0u8lq60::::res://Graphics/Objects/BounceVine.png<>uid://bhfrfd8sbvo2y::::res://SFX/boing.wav
+Checkpoint.tscn::PackedScene::4551042003246044164::1705764798::0::1::::<><>::res://Scripts/Objects/Checkpoint.gd<>uid://duh8hwg8btthi::::res://Graphics/Objects/starpost base.png<>uid://dh3rpvdy8yloh::::res://Graphics/Objects/Starpost Pole.png<>uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres<>uid://dijhojsn2n48f::::res://Graphics/Particles/star.png<>uid://de4li31s3tfsv::::res://SFX/Checkpoint.WAV
+crate.tscn::PackedScene::2309958224390805295::1706231581::0::1::::<><>::uid://cccrbajagvkxy::::res://Graphics/Objects/crate.png<>res://Scripts/Objects/RigidBodyProjectile.gd<>res://Scripts/Shared/HitboxNeutral.gd<>uid://beg24n2prje7v::::res://Objects/CrateDebris.tscn
+CrateDebris.tscn::PackedScene::2681254196815405405::1706231581::0::1::::<><>::res://Scripts/Objects/DebrisController.gd<>uid://ckcmncmswrmf8::::res://Objects/debris_material.tres<>uid://6oipmh8gtvsm::::res://Graphics/Objects/Crate Debris/crate1.png<>uid://de4odcks538r::::res://Graphics/Objects/Crate Debris/crate2.png<>res://Scripts/Shared/TimerDisappear.gd<>uid://bgahn73sjmnxw::::res://SFX/Crate burst.wav<>uid://dgotmfnkq471w::::res://Graphics/Objects/Crate Debris/crate3.png<>uid://chp24wx0gn5cc::::res://Graphics/Objects/Crate Debris/crate4.png<>uid://dxcoevd0n28u7::::res://Graphics/Objects/Crate Debris/crate5.png<>uid://b8kymt3djrbxj::::res://Graphics/Objects/Crate Debris/crate6.png<>uid://c5mm47vmlv1xb::::res://Graphics/Objects/Crate Debris/crate7.png<>uid://cultbgi6658m3::::res://Graphics/Objects/Crate Debris/crate8.png<>uid://dpj54tu4ps11w::::res://Graphics/Objects/Crate Debris/crate9.png<>uid://nra63122txnv::::res://Graphics/Objects/Crate Debris/crate10.png<>uid://dx347jo3kt6fy::::res://Graphics/Objects/Crate Debris/crate11.png<>uid://cbxfi15rm1lyp::::res://Graphics/Objects/Crate Debris/crate12.png<>uid://cjw02q1rkvgpt::::res://Graphics/Particles/explosion.png
+CrumblingBridge.tscn::PackedScene::8056392072188975080::1707659605::0::1::::<><>::res://Scripts/Objects/CrumblingBridge.gd<>uid://bl11lujr3fota::::res://Graphics/Objects/Levels/kv_platform_cracked.png<>uid://v6oqrok6nkfs::::res://Graphics/Objects/Levels/kv_platform.png<>uid://cjw02q1rkvgpt::::res://Graphics/Particles/explosion.png<>uid://dnlhapoheqjxf::::res://Graphics/Particles/cloud.png<>uid://m5ckf1gdi0mc::::res://SFX/Crumble.WAV<>uid://x7u3ebugrlvg::::res://SFX/gunshot2.wav<>res://Scripts/Shared/HitboxNeutral.gd
+debris_material.tres::PhysicsMaterial::5479610502940879267::1706605481::0::1::::<><>::
+EagleStatue.gd::GDScript::-1::1706400227::0::1::::<>Node2D<>::
+EagleStatue.tscn::PackedScene::6863161935455525007::1707659605::0::1::::<><>::res://Objects/EagleStatue.gd<>uid://cvwy0jket3sxj::::res://Graphics/Objects/Levels/EagleStatue.png<>uid://kdc0oc552qh1::::res://Graphics/Objects/Levels/EagleStatueOrb.png<>uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres<>uid://g3vs4dq0s2w::::res://Graphics/Particles/ring.png<>uid://djs58b41cjiue::::res://Graphics/Objects/Levels/EagleStatueSwitch.png<>uid://qjfq3s20dr0v::::res://Graphics/Particles/flare.png<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://biepuhpj3dllx::::res://SFX/SwitchActivate.WAV
+EggFlyer.tscn::PackedScene::5420961145238885427::1705500908::0::1::::<><>::res://Scripts/Enemies/Enemy.gd<>uid://7ae2rqihblj4::::res://Graphics/Enemies/Egg Flyer.png<>res://Scripts/Shared/CircularMovement.gd<>res://Scripts/Enemies/HitboxHazard.gd
+EggGunner.tscn::PackedScene::1768125745649291087::1706303504::0::1::::<><>::res://Scripts/Enemies/EggGunner.gd<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://bu3aawbhw5he1::::res://Graphics/Enemies/gunner.png<>uid://odxny34xuvnh::::res://Graphics/Enemies/Gunner Gun.png<>uid://qjfq3s20dr0v::::res://Graphics/Particles/flare.png<>uid://bv0r63xge2gih::::res://Graphics/Particles/spark.png<>res://Scripts/Enemies/HitboxHazard.gd<>res://Scripts/Shared/Gravity.gd<>res://Scripts/Shared/CircularMovement.gd<>res://Scripts/Shared/StateMachine.gd<>res://Scripts/Enemies/GunnerIdle.gd<>uid://bwj777g0c3bm8::::res://Objects/gunner_bullet.tscn<>uid://bsyldghxokfmy::::res://SFX/gunshot1.wav<>uid://cki6lelpp6mx6::::res://SFX/gun cock.wav
+EggLiner.tscn::PackedScene::5201776842687393923::1705424547::0::1::::<><>::res://Scripts/Enemies/Enemy.gd<>uid://bc58sc8fxb3lc::::res://Graphics/Enemies/Liner.png<>res://Scripts/Enemies/HitboxHazard.gd<>uid://kqn8ke1klewa::::res://Graphics/Particles/smoke.png<>res://Scripts/Shared/StateMachine.gd<>res://Scripts/Enemies/EnemyPatrol.gd<>res://Scripts/Shared/Gravity.gd
+GoalRing.tscn::PackedScene::1045296771783865579::1705870439::0::1::::<><>::res://Scripts/Objects/GoalRing.gd<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://dno6qhn8721uq::::res://Graphics/Objects/Goal Ring.png<>uid://duq4enbbuc0ba::::res://SFX/Goal Ring Ambience.wav<>res://Shaders/GoalRing.gdshader<>uid://dijhojsn2n48f::::res://Graphics/Particles/star.png
+gunner_bullet.tscn::PackedScene::3951156423845526493::1705653060::0::1::::<><>::res://Scripts/Shared/Projectile.gd<>uid://qjfq3s20dr0v::::res://Graphics/Particles/flare.png<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://dfhuhdedf8tkh::::res://Graphics/Enemies/Gunner Bullet.png<>res://Scripts/Enemies/HitboxHazard.gd<>uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres
+hud.tscn::PackedScene::4967416996771437765::1705134110::0::1::::<><>::res://Scripts/Interface/HUD.gd<>uid://d2e034pdyr8yj::::res://Graphics/Interface/Ring.png<>uid://ckemlm8gcppms::::res://SFX/Menu Back.WAV<>uid://ba43d7q27yyp8::::res://SFX/Menu Select.WAV
+IntroLogos.tscn::PackedScene::1241720032994129098::1707659605::0::1::::<><>::uid://b8uvytud5j5bj::::res://Graphics/Interface/Sonic Team.png<>res://Scripts/Interface/IntroLogos.gd<>res://Scripts/Interface/ScreenFade.gd<>uid://bgbhxc5avk3xm::::res://Graphics/Interface/Sega.png<>uid://bylgjqlio7h4u::::res://Themes/impact.ttf<>uid://fbjq1jftilr0::::res://SFX/ring.WAV<>uid://dd11jn8fi3rsh::::res://Graphics/Interface/EngineerKappa.png<>uid://cinqv5b31hqqp::::res://SFX/snBuddChange.wav
+ItemBox.tscn::PackedScene::4588407631985931275::1705614895::0::1::::<><>::res://Scripts/Objects/ItemBox.gd<>uid://c1xt564a4bkvc::::res://Graphics/Objects/Item Box.png<>uid://c751ye6i8qx3d::::res://Graphics/Objects/Item Box Card.png<>uid://c2h7q6wo2wqgx::::res://SFX/Item Pop.wav
+kv_platform.tscn::PackedScene::627450831775575497::1706303504::0::1::::<><>::uid://dpsob8f2j1g3o::::res://Graphics/Objects/Levels/kv_platform2.png
+kv_torch2.tscn::PackedScene::3446723949521371368::1706303504::0::1::::<><>::uid://b4ybr0tpq5p8h::::res://Graphics/Objects/Levels/torch2.png<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://qjfq3s20dr0v::::res://Graphics/Particles/flare.png<>uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres<>uid://kqn8ke1klewa::::res://Graphics/Particles/smoke.png<>uid://c6ln3dwmhxbbg::::res://Graphics/Particles/sphere.png
+kv_torch.tscn::PackedScene::565627765117328555::1705772094::0::1::::<><>::uid://dre3744yxbwlc::::res://Graphics/Objects/Levels/torch.png<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://qjfq3s20dr0v::::res://Graphics/Particles/flare.png<>uid://kqn8ke1klewa::::res://Graphics/Particles/smoke.png<>uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres<>uid://c6ln3dwmhxbbg::::res://Graphics/Particles/sphere.png
+player.tscn::PackedScene::2043327926594147928::1707659605::0::1::::<><>::res://Scripts/Player/Player.gd<>uid://dy3sxlnfp1w52::::res://Objects/RingDropped.tscn<>uid://v2chuxj6ht6j::::res://Graphics/Razer/razer_sheet.png<>uid://g3vs4dq0s2w::::res://Graphics/Particles/ring.png<>uid://bfw7rxmep8fb5::::res://SFX/Jump.WAV<>uid://d2tru17mu0yxn::::res://SFX/Death.WAV<>uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres<>uid://bxs6dve8vjvcv::::res://SFX/Spiked.WAV<>uid://dwwgh06saecx0::::res://SFX/Ring Loss.WAV<>uid://dutcrwh2gqxb0::::res://SFX/Land 2.WAV<>res://Scripts/Player/Walljump.gd<>uid://d0sljbuy44mts::::res://SFX/Land 3.WAV<>uid://ce8pybkc82iea::::res://SFX/Land.WAV<>res://Scripts/Player/Roll.gd<>uid://qjfq3s20dr0v::::res://Graphics/Particles/flare.png<>uid://j7unqpd3rr5l::::res://SFX/Bounce Bracelet.wav<>uid://bhcqly7y12ii5::::res://SFX/Thok.wav<>uid://0k2efrjqd206::::res://SFX/Spindash Charge.wav<>uid://bjmqjrxo0dawh::::res://SFX/Spindash Rev.WAV<>uid://bbol0ges52g5a::::res://SFX/Spindash Release.WAV<>uid://bj4v2jtfx6x22::::res://SFX/Grab.WAV<>uid://02sb0xumll38::::res://SFX/SA2 Jump.wav<>res://Scripts/Player/PlayerHurtbox.gd<>res://Scripts/Interface/ScreenFade.gd
+rainbow_ring.tscn::PackedScene::6862662866849616918::1706605809::0::1::::<><>::res://RainbowRing.gd<>uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres<>uid://b2lb2w0ikmjfg::::res://Graphics/Objects/RainbowRing.png<>uid://dijhojsn2n48f::::res://Graphics/Particles/star.png<>uid://c8cyprl5qhend::::res://SFX/ching5.wav<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres
+ResultsScreen.tscn::PackedScene::8562725822629365100::1705811877::0::1::::<><>::res://Scripts/Interface/ResultsScreen.gd<>uid://cik1qinxkrhd4::::res://BGM/Sonic Adventure - Round Clear.ogg<>uid://dgepl3f6ux0se::::res://SFX/Score Tally.WAV<>uid://fxbmunmqvlsa::::res://SFX/Beep.WAV<>uid://cbc0ae2sn7j0v::::res://Objects/ScreenFade.tscn
+Ring.tscn::PackedScene::7830344510878099738::1705699872::0::1::::<><>::uid://dtyfx5md43wlc::::res://Graphics/Objects/Ring.png<>res://Scripts/Objects/Ring.gd<>uid://bv0r63xge2gih::::res://Graphics/Particles/spark.png<>uid://blxov2qxlbefs::::res://Objects/unlit_mix.tres<>uid://fbjq1jftilr0::::res://SFX/ring.WAV
+RingDropped.tscn::PackedScene::8902731452722942607::1705134577::0::1::::<><>::uid://djtcvometdy07::::res://Objects/Ring.tscn<>res://Scripts/Objects/RingDropped.gd<>res://Scripts/Shared/TimerDisappear.gd
+ScreenFade.tscn::PackedScene::4848677143991114459::1705424469::0::1::::<><>::res://Scripts/Interface/ScreenFade.gd
+SFDoor.tscn::PackedScene::828318249471491894::1706231581::0::1::::<><>::res://Scripts/Objects/AreaTransition.gd<>uid://csrr1nhq6ncpm::::res://Graphics/Objects/Levels/Purple Palace/exit.png
+SFFlame.tscn::PackedScene::274805842193778708::1706228131::0::1::::<><>::res://Scripts/Enemies/Enemy.gd<>uid://cfknx787p1mqa::::res://Graphics/Objects/Levels/Purple Palace/ashar.png<>res://Scripts/Enemies/HitboxHazard.gd<>res://Scripts/Shared/Gravity.gd<>res://Scripts/Shared/StateMachine.gd<>res://Scripts/Enemies/EnemyPatrol.gd
+SFNipper.tscn::PackedScene::7528265700810005971::1705288413::0::1::::<><>::uid://b6ge2a2eguo6k::::res://Graphics/Objects/Levels/Purple Palace/nipper.png<>res://Scripts/Enemies/HitboxHazard.gd
+SFRobot.tscn::PackedScene::8321495444440136267::1706228131::0::1::::<><>::res://Scripts/Enemies/Enemy.gd<>uid://co2fcqhjwj0rl::::res://Graphics/Objects/Levels/Purple Palace/robot.png<>res://Scripts/Enemies/HitboxHazard.gd<>res://Scripts/Shared/Gravity.gd<>res://Scripts/Shared/StateMachine.gd<>res://Scripts/Enemies/EnemyPatrol.gd
+Signpost.tscn::PackedScene::4560782077145133851::1705769828::0::1::::<><>::uid://dtxb1tnqgs5of::::res://Graphics/Objects/signpost.png<>uid://comlqm50qbgoh::::res://Graphics/Objects/signpost hand.png
+Spike Ball.tscn::PackedScene::3931608400566844495::1705241813::0::1::::<><>::res://Scripts/Enemies/HitboxHazard.gd<>uid://ev7yigbpu352::::res://Graphics/Objects/Spike Ball.png
+SpikePivot.tscn::PackedScene::8069895720000866065::1706228193::0::1::::<><>::res://Scripts/Objects/SpikePivot.gd<>uid://bua5stb21by18::::res://Graphics/Objects/Spike Ball Pivot.png<>uid://bwarasouc14df::::res://Objects/Spike Ball.tscn<>uid://d4k1nlwbgn6wk::::res://SFX/Swinging spikes.WAV
+Spikes.tscn::PackedScene::6746559291275300431::1705132485::0::1::::<><>::uid://3njxs70q6ej0::::res://Graphics/Objects/spikes.png<>res://Scripts/Enemies/HitboxHazard.gd
+Spring.gd::GDScript::-1::1705706074::0::1::::<>Area2D<>::
+Spring.tscn::PackedScene::1192321463874675809::1706317429::0::1::::<><>::uid://bgjw2qf7rm1nb::::res://Graphics/Objects/Spring.png<>res://Objects/Spring.gd<>uid://b0mssqcci6xda::::res://SFX/Spring.WAV
+StickyDoor.tscn::PackedScene::8972160802907390207::1706231581::0::1::::<><>::res://Scripts/Objects/AreaTransition.gd<>uid://csrr1nhq6ncpm::::res://Graphics/Objects/Levels/Purple Palace/exit.png
+unlit_add.tres::CanvasItemMaterial::235586564306776715::1705769164::0::1::::<><>::
+unlit_mix.tres::CanvasItemMaterial::3206867635532648548::1705651399::0::1::::<><>::
+wind_platform.gd::GDScript::-1::1706400511::0::1::::WindPlatform<>AnimatableBody2D<>::
+wind_platform.tscn::PackedScene::5834657155015185180::1706413121::0::1::::<><>::res://Objects/wind_platform.gd<>uid://dmecugxdf67x::::res://Objects/unlit_add.tres<>uid://dvf3ihrg23sb1::::res://Graphics/Objects/Levels/WindPlatform.png<>uid://c6ln3dwmhxbbg::::res://Graphics/Particles/sphere.png<>uid://g3vs4dq0s2w::::res://Graphics/Particles/ring.png
+::res://Scripts/::1706317674
+Level.gd::GDScript::-1::1705891978::0::1::::Level<>Node2D<>::
+Room.gd::GDScript::-1::1706317674::0::1::::Room<>Node2D<>::
+::res://Scripts/Enemies/::1705454501
+BadnikExplosion.gd::GDScript::-1::1704952960::0::1::::<>Node2D<>::
+EggGunner.gd::GDScript::-1::1705341428::0::1::::<>Enemy<>::
+Enemy.gd::GDScript::-1::1705454501::0::1::::Enemy<>CharacterBody2D<>::
+EnemyPatrol.gd::GDScript::-1::1705141332::0::1::::<>State<>::
+GunnerIdle.gd::GDScript::-1::1705358783::0::1::::<>State<>::
+HitboxHazard.gd::GDScript::-1::1705253343::0::1::::HitboxHazard<>Area2D<>::
+::res://Scripts/Interface/::1705892374
+HUD.gd::GDScript::-1::1705129130::0::1::::<>CanvasLayer<>::
+IntroLogos.gd::GDScript::-1::1705892374::0::1::::<>Control<>::
+ResultsScreen.gd::GDScript::-1::1705805867::0::1::::<>CanvasLayer<>::
+ScreenFade.gd::GDScript::-1::1705431500::0::1::::ScreenFade<>ColorRect<>::
+TitleScreen.gd::GDScript::-1::1705800367::0::1::::<>Control<>::
+::res://Scripts/Objects/::1706421177
+AreaTransition.gd::GDScript::-1::1706143607::0::1::::AreaTransition<>Area2D<>::
+BounceFloor.gd::GDScript::-1::1706421176::0::1::::<>Area2D<>::
+Checkpoint.gd::GDScript::-1::1705518476::0::1::::<>Area2D<>::
+CrumbleCheck.gd::GDScript::-1::1705176854::0::1::::<>Area2D<>::
+CrumblingBridge.gd::GDScript::-1::1705234134::0::1::::<>RigidBody2D<>::
+DebrisController.gd::GDScript::-1::1705641638::0::1::::<>Node2D<>::
+GoalRing.gd::GDScript::-1::1705129172::0::1::::GoalRing<>Area2D<>::
+InstancePivot.gd::GDScript::-1::1706246258::0::1::::InstancePivot<>Node2D<>::
+ItemBox.gd::GDScript::-1::1705606834::0::1::::<>Node2D<>::
+RigidBodyProjectile.gd::GDScript::-1::1705724033::0::1::::RigidBodyProjectile<>RigidBody2D<>::
+Ring.gd::GDScript::-1::1704959672::0::1::::<>Area2D<>::
+RingDropped.gd::GDScript::-1::1704962271::0::1::::<>CharacterBody2D<>::
+SpikePivot.gd::GDScript::-1::1706248868::0::1::::<>Node2D<>::
+::res://Scripts/Player/::1706317950
+Player.gd::GDScript::-1::1706317950::0::1::::Player<>CharacterBody2D<>::
+PlayerHurtbox.gd::GDScript::-1::1704971266::0::1::::PlayerHurtbox<>Area2D<>::
+Roll.gd::GDScript::-1::1705720951::0::1::::<>Node<>::
+Walljump.gd::GDScript::-1::1705614885::0::1::::<>Node<>::
+::res://Scripts/Shared/::1705872356
+CircularMovement.gd::GDScript::-1::1705558779::0::1::::CircularMovement<>Node2D<>::
+Global.gd::GDScript::-1::1705872356::0::1::::<>Node<>::
+Gravity.gd::GDScript::-1::1705138073::0::1::::Gravity<>Node<>::
+HitboxNeutral.gd::GDScript::-1::1705624064::0::1::::HitboxNeutral<>Area2D<>::
+Projectile.gd::GDScript::-1::1705642083::0::1::::Projectile<>CharacterBody2D<>::
+RectScroll.gd::GDScript::-1::1705555526::0::1::::<>TextureRect<>::
+State.gd::GDScript::-1::1705342454::0::1::::State<>Node<>::
+StateMachine.gd::GDScript::-1::1705137234::0::1::::StateMachine<>Node<>::
+TimerDisappear.gd::GDScript::-1::1705133749::0::1::::TimerDisappear<>Timer<>::
+::res://SFX/::1706397732
+1-up.WAV::AudioStreamWAV::2186468566651587218::1432768714::1704683783::1::::<><>::
+Badnik Explosion.WAV::AudioStreamWAV::1814763362806151524::1432768736::1704683783::1::::<><>::
+Badnik Pop.WAV::AudioStreamWAV::7132644897683307635::826623320::1704683783::1::::<><>::
+beep3.wav::AudioStreamWAV::6211567697005486410::940603566::1704683783::1::::<><>::
+beep5.wav::AudioStreamWAV::7671709215437731332::940603650::1704683783::1::::<><>::
+Beep.WAV::AudioStreamWAV::398508124170067448::826623366::1705055595::1::::<><>::
+boing.wav::AudioStreamWAV::2889105805144793630::946751142::1704683783::1::::<><>::
+boink3.wav::AudioStreamWAV::3082059565712937729::940603692::1704683783::1::::<><>::
+bonk.wav::AudioStreamWAV::8476821656579782221::940603692::1704857373::1::::<><>::
+Bounce Bracelet.wav::AudioStreamWAV::698998099768378291::1470242292::1704858357::1::::<><>::
+Bubble.WAV::AudioStreamWAV::6640215503808361192::826623238::1704683783::1::::<><>::
+Bumper.WAV::AudioStreamWAV::1432114300874461598::826623264::1704683783::1::::<><>::
+Checkpoint.WAV::AudioStreamWAV::7500568065445563557::1432768736::1704683783::1::::<><>::
+ching5.wav::AudioStreamWAV::7094686868958884229::1210965070::1706315159::1::::<><>::
+Crate burst.wav::AudioStreamWAV::2808003704623504648::1470242172::1705631747::1::::<><>::
+Crumble.WAV::AudioStreamWAV::904337051261394606::826623358::1704683783::1::::<><>::
+Crusher.WAV::AudioStreamWAV::4251773873867114631::1432768714::1704683783::1::::<><>::
+dash panels.WAV::AudioStreamWAV::8036105730971315133::1432768714::1704683783::1::::<><>::
+Death.WAV::AudioStreamWAV::9094653327002249091::826623200::1704683783::1::::<><>::
+drip.wav::AudioStreamWAV::7158674234797304128::940603876::1704683783::1::::<><>::
+Drown.WAV::AudioStreamWAV::4604890317507144037::826623256::1704683783::1::::<><>::
+electric zap.WAV::AudioStreamWAV::564615142626392601::1432768714::1704683783::1::::<><>::
+Emblem.WAV::AudioStreamWAV::6852430823618189377::1432768736::1704683783::1::::<><>::
+explosion.wav::AudioStreamWAV::6151331364392477488::822163400::1704683783::1::::<><>::
+Goal Ring Ambience.wav::AudioStreamWAV::8597837588291380278::1470242172::1705001157::1::::<><>::
+Grab 2.WAV::AudioStreamWAV::3858374163991412220::1432768736::1704683783::1::::<><>::
+Grab.WAV::AudioStreamWAV::3079311006907247957::1432768736::1704683783::1::::<><>::
+gun cock.wav::AudioStreamWAV::5493146924096777061::1696867083::1705358696::1::::<><>::
+gunshot1.wav::AudioStreamWAV::3700038506595118868::994723314::1704683783::1::::<><>::
+gunshot2.wav::AudioStreamWAV::1681668046444937124::994723228::1704683783::1::::<><>::
+gunshot4.wav::AudioStreamWAV::1884501858773648548::994723436::1704683783::1::::<><>::
+hedgehoghammer_popup.wav::AudioStreamWAV::7218626691590620670::1210972920::1706397516::1::::<><>::
+hintmark.wav::AudioStreamWAV::3406997635627512788::1210964968::1706315159::1::::<><>::
+Item Pop.wav::AudioStreamWAV::6684363969245112131::1470207666::1704683783::1::::<><>::
+Jump.WAV::AudioStreamWAV::2784755741515284044::1432768736::1704683783::1::::<><>::
+Kaching.WAV::AudioStreamWAV::1023337058195279759::1432768736::1704683783::1::::<><>::
+Land 2.WAV::AudioStreamWAV::8602415061211766807::1432768736::1704683783::1::::<><>::
+Land 3.WAV::AudioStreamWAV::8951825985218560640::1432768736::1704683783::1::::<><>::
+Land.WAV::AudioStreamWAV::5122674889874953552::1432768736::1704683783::1::::<><>::
+laser.wav::AudioStreamWAV::4095451054979565870::940603808::1704683783::1::::<><>::
+Menu Appear.WAV::AudioStreamWAV::8196579316197476576::1432768736::1704683783::1::::<><>::
+Menu Back.WAV::AudioStreamWAV::5483736243963556478::1432768736::1704683783::1::::<><>::
+Menu Beep.WAV::AudioStreamWAV::7114401215009879383::1432768736::1704683783::1::::<><>::
+Menu Disappear.WAV::AudioStreamWAV::3968789371948410913::1432768736::1704683783::1::::<><>::
+Menu Select.WAV::AudioStreamWAV::2447994778474576287::1432768736::1704683783::1::::<><>::
+ow.wav::AudioStreamWAV::960743496056735074::940603768::1704683783::1::::<><>::
+ping.wav::AudioStreamWAV::3236837432814302278::940603516::1704683783::1::::<><>::
+Rail Grind.wav::AudioStreamWAV::7441857239878264292::1470242172::1704858357::1::::<><>::
+Ring Loss.WAV::AudioStreamWAV::8749211086009952207::826623340::1704863395::1::::<><>::
+ring.WAV::AudioStreamWAV::353585001344836951::826623370::1704863368::1::::<><>::
+Roll.WAV::AudioStreamWAV::4464090165548097558::826623308::1704683783::1::::<><>::
+SA2 Jump.wav::AudioStreamWAV::1811555331513570525::1470242292::1704877508::1::::<><>::
+Score Tally.WAV::AudioStreamWAV::7589584502362171876::826623336::1705055054::1::::<><>::
+Shield.WAV::AudioStreamWAV::6606376358446241587::826623246::1704683783::1::::<><>::
+Signpost Spin.WAV::AudioStreamWAV::3807080571238507546::826623374::1704683783::1::::<><>::
+Skid.WAV::AudioStreamWAV::1948708315801521698::1432768736::1704683783::1::::<><>::
+snBuddChange.wav::AudioStreamWAV::5362199579402044039::1620701382::1705087936::1::::<><>::
+Soft step.WAV::AudioStreamWAV::7576924931897810221::1432768736::1704683783::1::::<><>::
+Spiked.WAV::AudioStreamWAV::4039811581795777765::826623210::1704683783::1::::<><>::
+Spindash Charge.wav::AudioStreamWAV::1777011659780597461::1470242292::1704863338::1::::<><>::
+Spindash Loop.wav::AudioStreamWAV::1323345374954823603::1470242292::1704863338::1::::<><>::
+Spindash Release.WAV::AudioStreamWAV::2486223669834339212::826623300::1704863511::1::::<><>::
+Spindash Rev.WAV::AudioStreamWAV::3043881282610594331::825562632::1705227402::1::::<><>::
+Splash.WAV::AudioStreamWAV::1030308394957476799::826623226::1704683783::1::::<><>::
+Spring.WAV::AudioStreamWAV::4167040201418730234::1432768736::1704683783::1::::<><>::
+Swinging spikes.WAV::AudioStreamWAV::9216984763052081498::1432768714::1705241955::1::::<><>::
+SwitchActivate.WAV::AudioStreamWAV::2957135805865178609::825562518::1706397732::1::::<><>::
+Thok.wav::AudioStreamWAV::2882863771405075014::1470242292::1704683783::1::::<><>::
+Tikal jingle.WAV::AudioStreamWAV::5012414417546143114::1432768714::1704683783::1::::<><>::
+Tink.WAV::AudioStreamWAV::3284792977651792147::1432768736::1704683783::1::::<><>::
+zap.wav::AudioStreamWAV::5843890751731177977::960598172::1704683783::1::::<><>::
+::res://Shaders/::1707660074
+GoalRing.gdshader::Shader::-1::1707660074::0::1::::<><>::
+::res://Themes/::1705086789
+comic.ttf::FontFile::5733026174176132390::1575709706::1705086789::1::::<><>::
+impact.ttf::FontFile::4094042318152188458::1575709717::1705086789::1::::<><>::
+::res://Tilesets/::1706605481
+KingdomValley.tres::TileSet::5232148067695997600::1706605481::0::1::::<><>::uid://cc5qfegyhlelf::::res://Graphics/Objects/Levels/kv_tiles.png
+PurplePalace.tres::TileSet::586147184579732458::1706467868::0::1::::<><>::uid://drns566tm4nyn::::res://Graphics/Objects/Levels/Purple Palace/pp_tiles.png

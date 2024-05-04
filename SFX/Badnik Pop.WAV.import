@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c8vdvb82u2828"
+path="res://.godot/imported/Badnik Pop.WAV-d1d18f49a6e3da94d56c3c665b4cf313.sample"
+
+[deps]
+
+source_file="res://SFX/Badnik Pop.WAV"
+dest_files=["res://.godot/imported/Badnik Pop.WAV-d1d18f49a6e3da94d56c3c665b4cf313.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

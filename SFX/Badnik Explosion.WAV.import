@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://04c5f5e6wk57"
+path="res://.godot/imported/Badnik Explosion.WAV-ff235141e7d301386af8b8004d74204a.sample"
+
+[deps]
+
+source_file="res://SFX/Badnik Explosion.WAV"
+dest_files=["res://.godot/imported/Badnik Explosion.WAV-ff235141e7d301386af8b8004d74204a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

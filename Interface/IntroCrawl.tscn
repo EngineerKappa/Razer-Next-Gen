@@ -1,0 +1,95 @@
+[gd_scene load_steps=11 format=3 uid="uid://ob33nf04q6qu"]
+
+[ext_resource type="Script" path="res://Scripts/Interface/TitleScreen.gd" id="1_n1ejm"]
+[ext_resource type="PackedScene" uid="uid://d15ixphwtdv47" path="res://Levels/level_kv1.tscn" id="3_flwpp"]
+[ext_resource type="Script" path="res://Scripts/Interface/ScreenFade.gd" id="4_gs664"]
+[ext_resource type="Texture2D" uid="uid://bpds5vrmvpeoq" path="res://Graphics/Cutscenes/Intro White Space.png" id="5_nyy6s"]
+[ext_resource type="Script" path="res://Interface/TextCrawl.gd" id="7_kdxjp"]
+[ext_resource type="Material" uid="uid://dmecugxdf67x" path="res://Objects/unlit_add.tres" id="7_sc1nq"]
+[ext_resource type="AudioStream" uid="uid://dkpvds2581544" path="res://BGM/GM_20_LRZ_2_HPZ.ogg" id="8_3tji4"]
+[ext_resource type="FontFile" uid="uid://cnxedrvkfma8u" path="res://Themes/comic.ttf" id="9_mpl1h"]
+[ext_resource type="AudioStream" uid="uid://ba43d7q27yyp8" path="res://SFX/Menu Select.WAV" id="10_dxg23"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uylj4"]
+line_spacing = 0.0
+font = ExtResource("9_mpl1h")
+font_color = Color(0, 0, 0, 1)
+outline_size = 8
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n1ejm")
+press_start_allowed = true
+next_scene = ExtResource("3_flwpp")
+
+[node name="TitleScreen" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+texture = ExtResource("5_nyy6s")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_3tji4")
+autoplay = true
+
+[node name="SfxPressed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_dxg23")
+volume_db = -4.0
+
+[node name="Text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 488.0
+offset_right = 416.0
+offset_bottom = 1408.0
+text = "I'm Razer. Razer the Hedgehog.
+How did I end up here? Alone in this empty void, removed from time and space itself...
+
+How long has it been? Months? Years?...Decades? 
+
+Breaking the deafening silence, I hear a familiar voice, leading me towards a giant ring on the ground.
+
+\"Razer the Hedgehog, I need your help.
+
+An important person, a blue hedgehog going by \"Sonic\", is in grave danger. His death, 18 years ago, triggers the end of the world as we know it. 
+
+I need you to go back in time and  save both him and this timeline from their fate. \"
+
+Wait, THAT Sonic? Sonic the Hedgehog?!
+Ever since I was a kid, I used to be obsesssed with his adventures! Every year, he'd save the planet from some new evil, alongside his friends.
+
+...But what went wrong? Why does he need MY help all of a sudden? Does this have to do with the empty void I found myself in?
+
+Not having any other option, I jump into the giant ring and end up in a lush valley, near an ancient castle's ruins. 
+
+Sonic must be somewhere close, but where?
+
+
+[Press Start/Enter to continue]"
+label_settings = SubResource("LabelSettings_uylj4")
+autowrap_mode = 3
+script = ExtResource("7_kdxjp")
+
+[node name="FadeIn" type="ColorRect" parent="."]
+material = ExtResource("7_sc1nq")
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_gs664")
+target_color = Color(0, 0, 0, 0)
+start_color = Color(1, 1, 1, 1)
+time_to_fade = 1.0
+free_on_finish = true
+
+[node name="FadeOut" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("4_gs664")
+enabled = false
+hang_time = 1.0
+
+[connection signal="fade_finish" from="FadeOut" to="." method="_on_fade_out_fade_finish"]

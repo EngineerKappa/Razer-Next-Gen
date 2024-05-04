@@ -1,0 +1,251 @@
+res://export_presets.cfg::1705596194::7ff6344c316142b6a9b135eee421213b::
+res://icon.svg::1704603786::43b305bd3d55f8faec5e5175cbe35533::CompressedTexture2D
+res://TitleScreen.tscn::1705850821::ba7e16f84211636c25318463f5a5c895::PackedScene,Curve,Gradient,Animation,AnimationLibrary,LabelSettings,Control,Sprite2D,CPUParticles2D,AnimationPlayer,ColorRect,Label,AudioStreamPlayer
+res://BGM/Castlevania 3 - Mad Forest.ogg::1704619887::4ff516b06ba8b45bfdfda17837d84bbd::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/GM_20_LRZ_2_HPZ.ogg::1705790431::0da3599d42c34e83d0880703e6380d53::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/pso.ogg::1704681047::b53ce2bb7fd61af7bd0836e63cce16df::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Sonic Adventure 2 - Sonic vs Shadow.ogg::1704681146::2c8a9de32f063857cdee73faea14e283::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Sonic Adventure - Invincibility.ogg::1704681330::c78a963dd3e7d16782400b04a9bdb8ae::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Sonic Adventure - Round Clear.ogg::1704681342::41c9fe2b6602ca658081f91125264fa2::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Sonic Adventure - Speed Highway.ogg::1704680900::30bdaa69cf9d614746c7b80449f37d36::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Sonic the Hedgehog (2006) - His World.ogg::1704680525::40b35a15288c2f3aec0c304bac728d67::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Sonic the Hedgehog (2006) - Kingdom Valley ~ The Wind.ogg::1704680577::5d2cc52ea4fff425502ab3066c34e581::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Sonic the Hedgehog (2006) - Kingdom Valley ~ Water.ogg::1704680606::d273bd98a640337d84d66f8b8c60ad0e::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Sonic the Hedgehog (2006) - Town Mission 04.ogg::1704680781::fee1866e4d845e0a76e97a8696177a0a::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/STH-Marble_GoodFutureRemix.ogg::1704681475::fcfec82151c60729c3448bd9d60307d9::OggPacketSequence,AudioStreamOggVorbis
+res://BGM/Twinbee Rainbow Bell Adventure - Next Destination.ogg::1704680979::7c17bc575da84b19e42d1437ed950795::OggPacketSequence,AudioStreamOggVorbis
+res://Graphics/Cutscenes/Dark Gaia.png::1704996719::58ed661be4c3d5d070212cda1f925808::CompressedTexture2D
+res://Graphics/Cutscenes/Intro White Space.png::1705775841::87ec96865fda842811e7db50c4c4494c::CompressedTexture2D
+res://Graphics/Cutscenes/Razer vs Silver.png::1705787528::dad19dd53180470a22b003afdc528476::CompressedTexture2D
+res://Graphics/Cutscenes/Scruffy 1 featuring Razer.png::1705792823::6d4bbe2d979ebca586c996542ff7e15a::CompressedTexture2D
+res://Graphics/Cutscenes/Solaris.png::1704995059::9b6a1539753baea4ac4a626f24c575ca::CompressedTexture2D
+res://Graphics/Cutscenes/Time Eater.png::1704997965::fd6972e5798654a28c4b0bb4cc306c4e::CompressedTexture2D
+res://Graphics/Enemies/Egg Flyer.png::1705456265::c399549fed0e8e90c4513400df73c379::CompressedTexture2D
+res://Graphics/Enemies/Gunner Bullet.png::1705348083::86abb0216f8739d240d4c2b49bfcde85::CompressedTexture2D
+res://Graphics/Enemies/Gunner Gun.png::1705339053::5fcf2d2d2467b4f7ff4db6bf1f9ee76d::CompressedTexture2D
+res://Graphics/Enemies/gunner.png::1705339011::3588702e5741e155ff4fc42655eb4a54::CompressedTexture2D
+res://Graphics/Enemies/Liner.png::1704793388::09939434de2a12e946c4b69c5dce2e17::CompressedTexture2D
+res://Graphics/Interface/EngineerKappa.png::1705085486::1dc9470444df7858aedde4e365669d84::CompressedTexture2D
+res://Graphics/Interface/Ring.png::1704989666::42fc28bf3ac6fb5735dd9712aff30fa6::CompressedTexture2D
+res://Graphics/Interface/Sega.png::1705085930::2f540bb358e39db113ac10158adc2741::CompressedTexture2D
+res://Graphics/Interface/Soft step.WAV::1705087979::2903d0051fad5627776f573ed5589c08::AudioStreamWAV
+res://Graphics/Interface/Sonic Team.png::1705085796::d4eb368c97335a66539d1bd32d3f1462::CompressedTexture2D
+res://Graphics/Interface/title.png::1705095947::20d1774357c78444980ca732e5f3661b::CompressedTexture2D
+res://Graphics/Interface/TitleScreen.png::1705079284::53b1f29b04b78913db7bd11624632cdd::CompressedTexture2D
+res://Graphics/Objects/crate debris.png::1705621492::3c6f7bc61696987c886fdf8c20c219b3::CompressedTexture2D
+res://Graphics/Objects/crate.png::1705636276::fdff9354890ae2df40a058f10928ae21::CompressedTexture2D
+res://Graphics/Objects/Goal Ring.png::1705001491::6087905b2c21f7351bd21638e88d09e7::CompressedTexture2D
+res://Graphics/Objects/Item Box Card.png::1705151150::2f31ea0d6949d5953624ccaaef7bb9a7::CompressedTexture2D
+res://Graphics/Objects/Item Box.png::1705150707::069b5042b36b0f74edcc154cc391e782::CompressedTexture2D
+res://Graphics/Objects/Ring.png::1704702988::d5e3da7c23f1a2468d0b8c3db915e25b::CompressedTexture2D
+res://Graphics/Objects/signpost hand.png::1705766252::2372cfa1d8ee4fde39275c8661a7762f::CompressedTexture2D
+res://Graphics/Objects/signpost.png::1705766292::7e85a8601896ab81837fcc3c019ddadb::CompressedTexture2D
+res://Graphics/Objects/Spike Ball Pivot.png::1705236370::0cec0ed04f261b8fe5e733b03a6f380e::CompressedTexture2D
+res://Graphics/Objects/Spike Ball.png::1705232726::17dda6cc5998de67251236fa9578beba::CompressedTexture2D
+res://Graphics/Objects/spikes.png::1704786588::aa2939dbf507c4442920e60ef046ee2a::CompressedTexture2D
+res://Graphics/Objects/Spring.png::1705565121::fe8eb28b06549369f0f7d5e4450fbcba::CompressedTexture2D
+res://Graphics/Objects/starpost base.png::1705501574::43a851be7f7841d89cc496a2ea72f258::CompressedTexture2D
+res://Graphics/Objects/Starpost Pole.png::1705500312::0add6a9b0fda7b1b4437de3c21ddc435::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate1.png::1705636253::09d27c4ade0a6090e27623ef3f04790e::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate2.png::1705636251::c7e0675b10b12e83fef19eecadd19430::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate3.png::1705636243::8d63217fb01ce8fc4351afe4013b2055::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate4.png::1705636269::866a9145c650104f0f49044645040805::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate5.png::1705636267::7272ddd01c2ed08953fd0af51413a4b3::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate6.png::1705636265::ad63a5aefc172862459da90d8ebb9dd0::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate7.png::1705636263::2676e3982773ed638b58b8034abb2697::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate8.png::1705636261::c756b8ab0ff074deca3397caf15e530b::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate9.png::1705636260::d6a08867519add10cbfb28930b773d5f::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate10.png::1705636258::09510bf7f6eb6e92a74134b6a8120ce5::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate11.png::1705636256::c2b985373041537b2bb99215a9afc2d7::CompressedTexture2D
+res://Graphics/Objects/Crate Debris/crate12.png::1705636255::4c323a5b6fab7d9a88976038d9b3fce1::CompressedTexture2D
+res://Graphics/Objects/Levels/brick pile.png::1705648748::cfbb7ea17b6252da41f45ba9df3a2376::CompressedTexture2D
+res://Graphics/Objects/Levels/kv_platform.png::1705172593::b87e745962a5028ad69410dc8311edfb::CompressedTexture2D
+res://Graphics/Objects/Levels/kv_platform_cracked.png::1705173088::ca5a25ab413e3c709ec5ff84c8ecc088::CompressedTexture2D
+res://Graphics/Objects/Levels/kv_sky.png::1704618106::2faf1a3f09694fa38084e9b5127a389e::CompressedTexture2D
+res://Graphics/Objects/Levels/kv_tiles.png::1705710060::3a776c9f8e02afc27ea0445236598c66::CompressedTexture2D
+res://Graphics/Objects/Levels/kv_water.png::1704700579::5860eec301ac608db2fa4cbd90332466::CompressedTexture2D
+res://Graphics/Objects/Levels/pillar.png::1705646580::ca43b926e81e2323ad71d794eba48632::CompressedTexture2D
+res://Graphics/Objects/Levels/torch.png::1705647751::627872ea71e4ae31e731cc344ae2d0cf::CompressedTexture2D
+res://Graphics/Objects/Levels/tree.png::1705644578::1e85bdffde7d3c9122412fd1175f1599::CompressedTexture2D
+res://Graphics/Objects/Levels/vines.png::1705649328::fa5d4fdc99ef8bf5bab3c1d0931e42fa::CompressedTexture2D
+res://Graphics/Objects/Levels/wirl1.png::1704700909::2fc97dca36919c3dec87c36614277dc3::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/ashar.png::1705264890::28f73613f2b7edf14b823ee8cc6d3d28::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/cinge dead.png::1705271866::bdbeb6726bcf0b90990de151501e2484::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/cinge.png::1705271803::39c847317ae744ca2d996cdeaa8eabb4::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/exit.png::1705265145::14ba3ae77a9b6be8e5be9b2dc23f712d::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/fireball.png::1705265905::5ad20ec4a7078c23581ef59ee82eb052::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/Level1.png::1705265687::da61f7f19cb44208b1aaf9835419397a::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/Level2.png::1705265703::5c496b7d0b861f672dda92ea9d0758f7::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/Level3.png::1705265717::b7ce4a158d7c833787018e8bbb7ae94b::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/nipper.png::1705271543::a33a54ddb2a4e5f671ea9ac5de4429e3::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/pp_bg.png::1705285799::613e12822c05e409c649d603fa1c9d21::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/pp_tiles.png::1705595424::d57c7b9cc9fbdf9a27eae9bbf58eeb01::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/rm_B1.png::1705265722::84c3dca25c15a2e57e351a9230f57a91::CompressedTexture2D
+res://Graphics/Objects/Levels/Purple Palace/robot.png::1705271417::489cd880894c751ebc806d24bed8d1d3::CompressedTexture2D
+res://Graphics/Particles/circle.png::1704697127::56c4642d0e787201c38480bcdcc5cf8e::CompressedTexture2D
+res://Graphics/Particles/cloud.png::1704696933::003c28b4621be2fc347a5d6d200223c8::CompressedTexture2D
+res://Graphics/Particles/explosion.png::1704696886::76abf3d0a432a05857b9f83ed08c9e9f::CompressedTexture2D
+res://Graphics/Particles/flare.png::1704697006::1e5660ba0ff8eeda4ec93e06d6f480f3::CompressedTexture2D
+res://Graphics/Particles/Rain.png::1705650502::8f1fe76ac42d3d29c9f313f3ee432f66::CompressedTexture2D
+res://Graphics/Particles/ring.png::1704696847::c3bcd79ccd27648df44b2e626bd0fac7::CompressedTexture2D
+res://Graphics/Particles/smoke.png::1704696978::5ed1e6bed8486dc75141da1f1ebe0014::CompressedTexture2D
+res://Graphics/Particles/spark.png::1704696903::fad32907ef7beeea977de9c9f4842270::CompressedTexture2D
+res://Graphics/Particles/sphere.png::1704696808::902493708ae574bce1fcc68300deea45::CompressedTexture2D
+res://Graphics/Particles/star.png::1704697089::c17adbb53cb2f46ced43dc6e4611b05e::CompressedTexture2D
+res://Graphics/Razer/razer.png::1704619301::f64ef9b1b3cdc0368ff9e58ae6acb079::CompressedTexture2D
+res://Graphics/Razer/razer_sheet.png::1704877270::fe4ebfbaee30f3b6e0b744d02cf921d6::CompressedTexture2D
+res://Interface/CingeCrawl.tscn::1705850932::d1edb46bf702c2200a974b0368fd75ba::PackedScene,LabelSettings,Control,Sprite2D,AudioStreamPlayer,Label,ColorRect
+res://Interface/CutsceneScroll.gd::1705796012::30fcc2aecfa9976e0c95172bf407e28d::GDScript
+res://Interface/IntroCrawl.tscn::1705811877::2d7cc50643d38fbc32f9534205a3b481::PackedScene,LabelSettings,Control,Sprite2D,AudioStreamPlayer,Label,ColorRect
+res://Interface/SilverCrawl.tscn::1705811877::2d9462b9999fb147966756d6cfda8b13::PackedScene,LabelSettings,Control,Sprite2D,AudioStreamPlayer,Label,ColorRect
+res://Interface/TextCrawl.gd::1705800896::0407b69ac5985a0326eb1b50d40fc9d1::GDScript
+res://Levels/level_kv1.tscn::1705850859::8ea3f856ce4b2837b8df06cdf1dac0b7::PackedScene,Node2D,AudioStreamPlayer
+res://Levels/level_pp.tscn::1705811877::90b30b0663308ab49a5ae7b850aef7d5::PackedScene,Node2D,AudioStreamPlayer
+res://Levels/room_kv1a.tscn::1705801385::dade9bb90016cf880457c19b97253b1e::PackedScene,Gradient,RectangleShape2D,Node2D,Sprite2D,ParallaxBackground,TextureRect
+res://Levels/room_kv1b.tscn::1705811877::4156c84bf8705e14a6b559e5255d0acc::PackedScene,Node2D,CanvasGroup
+res://Levels/room_pp1.tscn::1705725535::941a3b45de263221edeaa10299ec328a::PackedScene,Node2D,TextureRect,TileMap
+res://Levels/room_pp2.tscn::1705614896::9d350652563e58e1c18df8f0015077ff::PackedScene,Node2D,TextureRect,Sprite2D,TileMap
+res://Levels/room_pp3.tscn::1705851027::7fe25a5335f987533a9c09dc55d1d0ae::PackedScene,Node2D,TextureRect,Sprite2D,TileMap,Node
+res://Objects/AreaTransition.gd::1705729296::1490b98c5e6304fe95dccb3adc1e781b::GDScript
+res://Objects/AreaTransition.tscn::1705764798::094b5fdfb7d2b6bb5c2856a65a41647c::PackedScene,RectangleShape2D,Area2D,CollisionShape2D
+res://Objects/BadnikExplosion.tscn::1705651753::0c031c0587b575d00245265ae50db2cc::PackedScene,Gradient,Node2D,AudioStreamPlayer,CPUParticles2D,Timer
+res://Objects/Checkpoint.tscn::1705764798::380e8e37dc42ef529b651851c3204d83::PackedScene,RectangleShape2D,CanvasItemMaterial,AtlasTexture,SpriteFrames,Curve,Animation,AnimationLibrary,Area2D,CollisionShape2D,Sprite2D,AnimatedSprite2D,CPUParticles2D,AnimationPlayer,AudioStreamPlayer
+res://Objects/crate.tscn::1705716074::7b6b2558d33248b1d1787c2a13575f6b::PackedScene,PhysicsMaterial,RectangleShape2D,RigidBody2D,Sprite2D,CollisionShape2D,Area2D
+res://Objects/CrateDebris.tscn::1705716152::9a09bd7b95a6edd41fab54f19bdf91d2::PackedScene,Curve,Gradient,CircleShape2D,Node2D,RigidBody2D,Sprite2D,CollisionPolygon2D,Timer,AudioStreamPlayer2D,CPUParticles2D,Area2D,CollisionShape2D
+res://Objects/CrumblingBridge.tscn::1705716074::7acab1e0a13cd35ffae6fea501b0e599::PackedScene,PhysicsMaterial,Curve,RectangleShape2D,Gradient,RigidBody2D,CPUParticles2D,Sprite2D,CollisionShape2D,Timer,Area2D,AudioStreamPlayer
+res://Objects/DebrisController.gd::1705641638::c9170bda1785e13a33099e8365edcf31::GDScript
+res://Objects/debris_material.tres::1705764553::59a5983d67f1108eeb9cab4e055e245b::
+res://Objects/EggFlyer.tscn::1705500908::66acc723c59e6024071257abb77e58b6::PackedScene,AtlasTexture,SpriteFrames,RectangleShape2D,CharacterBody2D,AnimatedSprite2D,Node2D,CollisionShape2D,Area2D
+res://Objects/EggGunner.tscn::1705651753::05d66e56b7b1f4dbcf63ce0efebf10d6::PackedScene,Curve,AtlasTexture,SpriteFrames,RectangleShape2D,CharacterBody2D,CPUParticles2D,AnimatedSprite2D,Sprite2D,Marker2D,CollisionShape2D,Area2D,Node2D,Node,Timer,AudioStreamPlayer2D
+res://Objects/EggLiner.tscn::1705424547::29ebaeb85ee836cd9a550cf9cdcd711b::PackedScene,RectangleShape2D,AtlasTexture,SpriteFrames,Curve,Gradient,CharacterBody2D,CollisionShape2D,AnimatedSprite2D,CPUParticles2D,Area2D,Node,RayCast2D
+res://Objects/GoalRing.tscn::1705699872::d63862d0bd9f741b798388474fb1e3c3::PackedScene,ShaderMaterial,AtlasTexture,SpriteFrames,CircleShape2D,Gradient,Animation,AnimationLibrary,Area2D,AnimatedSprite2D,AudioStreamPlayer2D,CollisionShape2D,CPUParticles2D,AnimationPlayer
+res://Objects/gunner_bullet.tscn::1705653060::33cdb6243e649540d68002a2929712e9::PackedScene,RectangleShape2D,Curve,CharacterBody2D,CollisionShape2D,RayCast2D,CPUParticles2D,Sprite2D,Area2D,Timer
+res://Objects/hud.tscn::1705134110::4816bf0bdec4787979acaf99b8c5535c::PackedScene,LabelSettings,CanvasLayer,ColorRect,Label,TextureRect,AudioStreamPlayer,Control
+res://Objects/IntroLogos.tscn::1705811877::d730290de73692b36b062748e0e783c0::PackedScene,LabelSettings,AtlasTexture,SpriteFrames,Control,ColorRect,Label,TextureRect,AnimatedSprite2D,AudioStreamPlayer,Timer
+res://Objects/ItemBox.tscn::1705614895::9649110b8dcda9ee7cf53516baa183f4::PackedScene,CircleShape2D,AtlasTexture,SpriteFrames,Animation,AnimationLibrary,Node2D,Sprite2D,Area2D,CollisionShape2D,AnimatedSprite2D,AnimationPlayer,AudioStreamPlayer
+res://Objects/kv_torch.tscn::1705772094::071ea2848f72484ce1294b555defe83a::PackedScene,AtlasTexture,SpriteFrames,Gradient,AnimatedSprite2D,Sprite2D,CPUParticles2D,PointLight2D
+res://Objects/player.tscn::1705772095::dc7f1c9364682b565018a52e43177436::PackedScene,Curve,Gradient,AtlasTexture,SpriteFrames,CircleShape2D,AudioStreamRandomizer,RectangleShape2D,CharacterBody2D,CPUParticles2D,AnimatedSprite2D,Area2D,CollisionShape2D,Node,AudioStreamPlayer,Camera2D,CanvasLayer,ColorRect
+res://Objects/ResultsScreen.tscn::1705811877::4b3b336a775b4c78b58dd9100fdb011e::PackedScene,LabelSettings,Animation,AnimationLibrary,CanvasLayer,ColorRect,Control,Label,AnimationPlayer,AudioStreamPlayer
+res://Objects/RigidBodyProjectile.gd::1705724033::c04eec8e1d311a2d79b753a64838681b::GDScript
+res://Objects/Ring.tscn::1705699872::30018558873e57814f4b77ecdd8e781d::PackedScene,RectangleShape2D,AtlasTexture,SpriteFrames,Curve,Area2D,CollisionShape2D,AnimatedSprite2D,CPUParticles2D,AudioStreamPlayer
+res://Objects/RingDropped.tscn::1705134577::6a6f0f5dcdfbfddf5b17d9e8efd51796::PackedScene,CircleShape2D,CharacterBody2D
+res://Objects/ScreenFade.tscn::1705424469::c302cb408ab76ba2f7b98739e77ca7ec::PackedScene,ColorRect
+res://Objects/SFDoor.tscn::1705725535::ddd856932ca33b8abd7cfdffa64e7c00::PackedScene,RectangleShape2D,Node2D,Sprite2D,Area2D,CollisionShape2D
+res://Objects/SFFlame.tscn::1705424547::18e423fcc97e4c4eb1550137cf16a63c::PackedScene,RectangleShape2D,AtlasTexture,SpriteFrames,CharacterBody2D,CollisionShape2D,AnimatedSprite2D,Area2D,Node,RayCast2D
+res://Objects/SFNipper.tscn::1705288413::8af540f4b365a9a5a289bb505f093a7e::PackedScene,AtlasTexture,SpriteFrames,RectangleShape2D,Node2D,AnimatedSprite2D,Area2D,CollisionShape2D
+res://Objects/SFRobot.tscn::1705614896::e8cf7d70bd46add142430ae7c0896d23::PackedScene,RectangleShape2D,AtlasTexture,SpriteFrames,CharacterBody2D,CollisionShape2D,AnimatedSprite2D,Area2D,Node,RayCast2D
+res://Objects/Signpost.tscn::1705769828::cb050dc6087e10950409b33ae186fb2a::PackedScene,Node2D,Sprite2D
+res://Objects/Spike Ball.tscn::1705241813::df778ee049c4d8edc10fc69bb6fdac56::PackedScene,CircleShape2D,Area2D,Sprite2D,CollisionShape2D
+res://Objects/SpikePivot.tscn::1705424458::7fa35514f333c20fcb01dcb0a43bb113::PackedScene,Node2D,Sprite2D,AudioStreamPlayer2D
+res://Objects/Spikes.tscn::1705132485::0a4c004750eebaa34f1391880f6fb29e::PackedScene,RectangleShape2D,Node2D,Sprite2D,Area2D,CollisionShape2D,StaticBody2D
+res://Objects/Spring.gd::1705706074::0376374cff9ea40b4f6747208af31f7c::GDScript
+res://Objects/Spring.tscn::1705730054::8c565c826573eef7c28ea263c7f7fe0b::PackedScene,RectangleShape2D,Animation,AnimationLibrary,Area2D,Sprite2D,CollisionShape2D,AudioStreamPlayer,AnimationPlayer,Timer
+res://Objects/unlit_add.tres::1705769164::3f2e702a1f12776fb609c00a0bbdb288::
+res://Objects/unlit_mix.tres::1705651399::ced2df853b69120a980eeea7f49c8dca::
+res://Scripts/Level.gd::1705822216::5cba82ea4d15b5a8f9c09a9b72937b43::GDScript
+res://Scripts/Room.gd::1705520078::58c759e618a43a64302f8dc8c94f76d1::GDScript
+res://Scripts/Enemies/BadnikExplosion.gd::1704952960::d59c3ac673ea2b7c2eda246ae93750c4::GDScript
+res://Scripts/Enemies/EggGunner.gd::1705341428::b2af864ee79b64f0ed4921da44d14718::GDScript
+res://Scripts/Enemies/Enemy.gd::1705454501::feef0c27383b767a3a9b331bf86340ca::GDScript
+res://Scripts/Enemies/EnemyPatrol.gd::1705141332::f9544d589999ec0bf4da5ca0abe368aa::GDScript
+res://Scripts/Enemies/GunnerIdle.gd::1705358783::2b587fbbbeb55f4d6fa9695b7e90436f::GDScript
+res://Scripts/Enemies/HitboxHazard.gd::1705253343::72b7919f2f678468bddc2649acf180de::GDScript
+res://Scripts/Interface/HUD.gd::1705129130::3df270c99ec995fbce4f029b4c8dc970::GDScript
+res://Scripts/Interface/IntroLogos.gd::1705091579::89139ec49e7ff08272f01bb7fb586b53::GDScript
+res://Scripts/Interface/ResultsScreen.gd::1705805867::480e7297fcbecac7f104fe9c4f8f553e::GDScript
+res://Scripts/Interface/ScreenFade.gd::1705431500::92f78e89d85e1b96c2d32248d54eed8f::GDScript
+res://Scripts/Interface/TitleScreen.gd::1705800367::d0cc085d27d591c0b562fb9dacdf70d7::GDScript
+res://Scripts/Objects/Checkpoint.gd::1705518476::570b3cbdc3708aac2f740e59cf8e4058::GDScript
+res://Scripts/Objects/CrumbleCheck.gd::1705176854::89fbfa94d870307c3c55412ffd8734d7::GDScript
+res://Scripts/Objects/CrumblingBridge.gd::1705234134::6ccbdb66fd9f24ecc08a639d1bf26e2c::GDScript
+res://Scripts/Objects/GoalRing.gd::1705129172::c74a41a1df33fd53bf03d60c604087d1::GDScript
+res://Scripts/Objects/ItemBox.gd::1705606834::3bffecf9717615f0044476a1ff6764a7::GDScript
+res://Scripts/Objects/Ring.gd::1704959672::e7a0bc7f26943b5ce408ed5ea61960df::GDScript
+res://Scripts/Objects/RingDropped.gd::1704962271::4011bdb37d13d4db6887c6277e249d56::GDScript
+res://Scripts/Objects/SFDoor.gd::1705725023::29f199eb5c4464848cb463346ed5d1e6::GDScript
+res://Scripts/Objects/SpikePivot.gd::1705242997::e834c37c8bc6639a176eb18550e87909::GDScript
+res://Scripts/Player/Player.gd::1705721931::f1fe2129e553e6eac92a82e7ee95a3f8::GDScript
+res://Scripts/Player/PlayerHurtbox.gd::1704971266::7714a60f964a466015492a675a750d5b::GDScript
+res://Scripts/Player/Roll.gd::1705720951::84c57b8f7e083f970cf953525eba1311::GDScript
+res://Scripts/Player/Walljump.gd::1705614885::9c3a1db91cb2bf0a61b4f1323fe7fef5::GDScript
+res://Scripts/Shared/CircularMovement.gd::1705558779::64599a41cc6b6e6a7862c2eaf264a92d::GDScript
+res://Scripts/Shared/Global.gd::1705550790::af2e4916a3a16a372843b08de41dfd1d::GDScript
+res://Scripts/Shared/Gravity.gd::1705138073::3d855f94ee6c62ef0a6dcb71e0de240a::GDScript
+res://Scripts/Shared/HitboxNeutral.gd::1705624064::22ede64cee0dce7ab3e9f6a15a3f258c::GDScript
+res://Scripts/Shared/Projectile.gd::1705642083::fd46738c036d00f6b448e3ce1d51d430::GDScript
+res://Scripts/Shared/RectScroll.gd::1705555526::6bf1babea81c163275e2c1becb5f3dd1::GDScript
+res://Scripts/Shared/State.gd::1705342454::5225471cb667e0bd5fb140d6c00db67c::GDScript
+res://Scripts/Shared/StateMachine.gd::1705137234::9595cbd2afd1a184f58c026c32b31f26::GDScript
+res://Scripts/Shared/TimerDisappear.gd::1705133749::5a94131da60c2efb8251e7bdd7e703f4::GDScript
+res://SFX/1-up.WAV::1432768714::5b63f72098dfd4517de5a5e801cd6013::AudioStreamWAV
+res://SFX/Badnik Explosion.WAV::1432768736::79c86390ff9cf50610b828a5421b360d::AudioStreamWAV
+res://SFX/Badnik Pop.WAV::826623320::87774477b0f12d519a8865016b538df4::AudioStreamWAV
+res://SFX/beep3.wav::940603566::26f809849d38ce5bbf87d8889ca7da31::AudioStreamWAV
+res://SFX/beep5.wav::940603650::3fb4ce3cbcd0720d6a563a2f3f6a133b::AudioStreamWAV
+res://SFX/Beep.WAV::826623366::717f24ae161da2a6a1150579976d026e::AudioStreamWAV
+res://SFX/boing.wav::946751142::45703e53807e47a64af027f6123bd94d::AudioStreamWAV
+res://SFX/boink3.wav::940603692::f168f543629f9f0deb28d7a878a32f8e::AudioStreamWAV
+res://SFX/bonk.wav::940603692::f168f543629f9f0deb28d7a878a32f8e::AudioStreamWAV
+res://SFX/Bounce Bracelet.wav::1470242292::834559cfc0789bb1028ee5d9a2e4934f::AudioStreamWAV
+res://SFX/Bubble.WAV::826623238::6da10d113817936c9b4ce4bed08d723f::AudioStreamWAV
+res://SFX/Bumper.WAV::826623264::389ed2e9d3fb2426105a39e767f26b14::AudioStreamWAV
+res://SFX/Checkpoint.WAV::1432768736::6c568377da1ef3881e34c640c88499d6::AudioStreamWAV
+res://SFX/Crate burst.wav::1470242172::866fb3345155c5359c0786a54d236043::AudioStreamWAV
+res://SFX/Crumble.WAV::826623358::ee51516d601eaaebd11e92c25d5b94f0::AudioStreamWAV
+res://SFX/Crusher.WAV::1432768714::fb5ba7c417ada3e67d2ead1351044440::AudioStreamWAV
+res://SFX/dash panels.WAV::1432768714::ee22c42159de1875051d02b0deec0590::AudioStreamWAV
+res://SFX/Death.WAV::826623200::f3f8258be0767dcb6f8926fc2527cc76::AudioStreamWAV
+res://SFX/drip.wav::940603876::ccc075ea8f751cb138b9a70b31df2706::AudioStreamWAV
+res://SFX/Drown.WAV::826623256::f9ce0aecc06c1bf9aa4c5aa42afa3935::AudioStreamWAV
+res://SFX/electric zap.WAV::1432768714::00adae05b1521f334b5b2282d804c315::AudioStreamWAV
+res://SFX/Emblem.WAV::1432768736::a28ab9c3609eda03adf38d7efa442bd7::AudioStreamWAV
+res://SFX/explosion.wav::822163400::2148f31851b7a4358c8814c9ed1a70fe::AudioStreamWAV
+res://SFX/Goal Ring Ambience.wav::1470242172::c2c7615140359630c6dde484cd92145e::AudioStreamWAV
+res://SFX/Grab 2.WAV::1432768736::0058839adad2c2f4dbea825d7d0e9604::AudioStreamWAV
+res://SFX/Grab.WAV::1432768736::e90a4dd817b5c693c199162b15070241::AudioStreamWAV
+res://SFX/gun cock.wav::1696867083::7453c61b78b2d95cfba10d45173abe73::AudioStreamWAV
+res://SFX/gunshot1.wav::994723314::2c035ff2d4115031f68930350acfed12::AudioStreamWAV
+res://SFX/gunshot2.wav::994723228::9875da24e9cb48dcb79872e42b853ec5::AudioStreamWAV
+res://SFX/gunshot4.wav::994723436::1590644ad20c6d37e5f5db120b16fd52::AudioStreamWAV
+res://SFX/Item Pop.wav::1470207666::0881ff5e848f13a272d2328c24a837d9::AudioStreamWAV
+res://SFX/Jump.WAV::1432768736::4343d6a53115c93980ca2aae2152d595::AudioStreamWAV
+res://SFX/Kaching.WAV::1432768736::5d80b46dcc170ac2af5dd535fa3f6524::AudioStreamWAV
+res://SFX/Land 2.WAV::1432768736::0a1cb15d03d71969b7a97780c152f0fa::AudioStreamWAV
+res://SFX/Land 3.WAV::1432768736::fbc5e9e506eee029b12c09c98347d47e::AudioStreamWAV
+res://SFX/Land.WAV::1432768736::d05e8642a03838846b067877a60bea34::AudioStreamWAV
+res://SFX/laser.wav::940603808::bd80de9c8f4013189ee47c35e5202e31::AudioStreamWAV
+res://SFX/Menu Appear.WAV::1432768736::9b3c2c4be17e00fcb1c088c580127940::AudioStreamWAV
+res://SFX/Menu Back.WAV::1432768736::df30f108b2c25ff4271533aa6562946f::AudioStreamWAV
+res://SFX/Menu Beep.WAV::1432768736::e3a6b12ddb7520b5814f07a8e34ee957::AudioStreamWAV
+res://SFX/Menu Disappear.WAV::1432768736::5dbe15ec8f57348097a976b37657c361::AudioStreamWAV
+res://SFX/Menu Select.WAV::1432768736::ed72ccaf012b3f5895ce2817fea9072a::AudioStreamWAV
+res://SFX/ow.wav::940603768::8d2ca4210073a07bfc22cb8bbd1d6353::AudioStreamWAV
+res://SFX/ping.wav::940603516::7472ffc041ae0b6fc0124de485c1120c::AudioStreamWAV
+res://SFX/Rail Grind.wav::1470242172::950e9bf73ff57d72bd8260f9f56614a1::AudioStreamWAV
+res://SFX/Ring Loss.WAV::826623340::35fdcbc2e0d915b1ad5510032e37e512::AudioStreamWAV
+res://SFX/ring.WAV::826623370::42cac58c6477bac813a98a817dbf87c0::AudioStreamWAV
+res://SFX/Roll.WAV::826623308::e296eaa3b3ffe3cd65309e0ec3e47d9d::AudioStreamWAV
+res://SFX/SA2 Jump.wav::1470242292::65f2b5d05a688818f10044fb1148ce28::AudioStreamWAV
+res://SFX/Score Tally.WAV::826623336::b83ff278defe8f97f5d47a3dcb4d4f6f::AudioStreamWAV
+res://SFX/Shield.WAV::826623246::70c7d8e48eebbd01ca10096b57601687::AudioStreamWAV
+res://SFX/Signpost Spin.WAV::826623374::3db2de0b3b8d1f206984c0cf77cb4ff0::AudioStreamWAV
+res://SFX/Skid.WAV::1432768736::07a3457c50eb67668664fce0703802ca::AudioStreamWAV
+res://SFX/snBuddChange.wav::1620701382::1e8f8e91820d3912db85d8e3883e91a2::AudioStreamWAV
+res://SFX/Soft step.WAV::1432768736::2903d0051fad5627776f573ed5589c08::AudioStreamWAV
+res://SFX/Spiked.WAV::826623210::92be89056596633af00d378e9862c569::AudioStreamWAV
+res://SFX/Spindash Charge.wav::1470242292::b21817a99e683d3850f96a2c5ca5d06b::AudioStreamWAV
+res://SFX/Spindash Loop.wav::1470242292::406b3fcc18c3d6b23ec81d284d37d55b::AudioStreamWAV
+res://SFX/Spindash Release.WAV::826623300::1403e552a853bab0835f416a61d460cb::AudioStreamWAV
+res://SFX/Spindash Rev.WAV::825562632::62d210e39e1db42e0d26a86277233c04::AudioStreamWAV
+res://SFX/Splash.WAV::826623226::2cdbd4403f22b01ae5e263f60bbf6a0e::AudioStreamWAV
+res://SFX/Spring.WAV::1432768736::4808c88abf8e62753510ff0cade2990b::AudioStreamWAV
+res://SFX/Swinging spikes.WAV::1432768714::0a92d636b25b2c08af399016cee561bf::AudioStreamWAV
+res://SFX/Thok.wav::1470242292::98b628310bec9c4b3fc32a794ad12a41::AudioStreamWAV
+res://SFX/Tikal jingle.WAV::1432768714::fa7956fec1564be540e5916c2fc87f2f::AudioStreamWAV
+res://SFX/Tink.WAV::1432768736::3183a1963f0c830ac398be7714d72804::AudioStreamWAV
+res://SFX/zap.wav::960598172::8f1fa9d45fc7069fe2076876b6c16679::AudioStreamWAV
+res://Shaders/GoalRing.gdshader::1705851027::7d5fa2c16a670dcd6a3b448f7d691cbb::Shader
+res://Themes/comic.ttf::1575709706::cb5a21a92d77658df1beee4d51b72777::FontFile
+res://Themes/impact.ttf::1575709717::f12902024f7b77ee4c34557ee6f3818b::FontFile
+res://Tilesets/KingdomValley.tres::1705764553::da0e2352fd0936f3c71196556d5a5309::TileSetAtlasSource,
+res://Tilesets/PurplePalace.tres::1705851027::33aeb8b1d08ecf3d78d13a2b8de5bd24::TileSetAtlasSource,

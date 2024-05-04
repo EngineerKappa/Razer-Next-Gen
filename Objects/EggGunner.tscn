@@ -1,0 +1,162 @@
+[gd_scene load_steps=20 format=3 uid="uid://0gq1jim03j64"]
+
+[ext_resource type="Script" path="res://Scripts/Enemies/EggGunner.gd" id="1_4bucf"]
+[ext_resource type="Material" uid="uid://dmecugxdf67x" path="res://Objects/unlit_add.tres" id="2_87c1e"]
+[ext_resource type="Texture2D" uid="uid://bu3aawbhw5he1" path="res://Graphics/Enemies/gunner.png" id="2_ad48s"]
+[ext_resource type="Texture2D" uid="uid://odxny34xuvnh" path="res://Graphics/Enemies/Gunner Gun.png" id="3_lka10"]
+[ext_resource type="Texture2D" uid="uid://qjfq3s20dr0v" path="res://Graphics/Particles/flare.png" id="4_ady1g"]
+[ext_resource type="Texture2D" uid="uid://bv0r63xge2gih" path="res://Graphics/Particles/spark.png" id="5_5ocsc"]
+[ext_resource type="Script" path="res://Scripts/Enemies/HitboxHazard.gd" id="5_qwlou"]
+[ext_resource type="Script" path="res://Scripts/Shared/Gravity.gd" id="6_1gk1c"]
+[ext_resource type="Script" path="res://Scripts/Shared/CircularMovement.gd" id="6_qgay0"]
+[ext_resource type="Script" path="res://Scripts/Shared/StateMachine.gd" id="7_32ph4"]
+[ext_resource type="Script" path="res://Scripts/Enemies/GunnerIdle.gd" id="8_5xo15"]
+[ext_resource type="PackedScene" uid="uid://bwj777g0c3bm8" path="res://Objects/gunner_bullet.tscn" id="10_e4hee"]
+[ext_resource type="AudioStream" uid="uid://bsyldghxokfmy" path="res://SFX/gunshot1.wav" id="11_ov1sw"]
+[ext_resource type="AudioStream" uid="uid://cki6lelpp6mx6" path="res://SFX/gun cock.wav" id="13_p8h73"]
+
+[sub_resource type="Curve" id="Curve_such2"]
+_data = [Vector2(0, 1.00497), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ils1v"]
+atlas = ExtResource("2_ad48s")
+region = Rect2(0, 0, 60, 81)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gyjp2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ils1v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ed0at"]
+size = Vector2(32, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gokt6"]
+size = Vector2(48, 72)
+
+[node name="EggGunner" type="CharacterBody2D" node_paths=PackedStringArray("animation")]
+collision_layer = 4
+script = ExtResource("1_4bucf")
+hovering = true
+explosion_offset = Vector2(0, -40)
+animation = NodePath("SpriteGunner")
+
+[node name="ParticleJet" type="CPUParticles2D" parent="."]
+material = ExtResource("2_87c1e")
+position = Vector2(-8, -64)
+amount = 10
+lifetime = 0.5
+texture = ExtResource("4_ady1g")
+direction = Vector2(-1, 1)
+spread = 16.75
+gravity = Vector2(0, 0)
+initial_velocity_min = 161.29
+initial_velocity_max = 161.29
+scale_amount_min = 0.6
+scale_amount_max = 0.6
+scale_amount_curve = SubResource("Curve_such2")
+color = Color(0, 0.266667, 1, 1)
+
+[node name="SpriteGunner" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -39)
+sprite_frames = SubResource("SpriteFrames_gyjp2")
+
+[node name="SpriteGun" type="Sprite2D" parent="SpriteGunner"]
+position = Vector2(27, -1)
+texture = ExtResource("3_lka10")
+offset = Vector2(16, 0)
+
+[node name="ParticleMuzzleflash" type="CPUParticles2D" parent="SpriteGunner/SpriteGun"]
+material = ExtResource("2_87c1e")
+position = Vector2(37, 0)
+emitting = false
+amount = 1
+lifetime = 0.05
+one_shot = true
+texture = ExtResource("5_5ocsc")
+gravity = Vector2(0, 0)
+angular_velocity_min = 503.23
+angular_velocity_max = 503.23
+scale_amount_min = 1.5
+scale_amount_max = 2.0
+color = Color(1, 1, 0, 1)
+
+[node name="BulletMarker" type="Marker2D" parent="SpriteGunner/SpriteGun"]
+position = Vector2(33, 1)
+
+[node name="Light" type="Sprite2D" parent="SpriteGunner"]
+modulate = Color(0.54902, 1, 1, 1)
+material = ExtResource("2_87c1e")
+position = Vector2(16, -13)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_ady1g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -36)
+shape = SubResource("RectangleShape2D_ed0at")
+
+[node name="HitboxHazard" type="Area2D" parent="." node_paths=PackedStringArray("hazard_object")]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("5_qwlou")
+hazard_object = NodePath("..")
+damage_type = "Badnik"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxHazard"]
+position = Vector2(0, -36)
+shape = SubResource("RectangleShape2D_gokt6")
+debug_color = Color(1, 0, 0, 0.419608)
+
+[node name="CircularMovement" type="Node2D" parent="." node_paths=PackedStringArray("parent")]
+position = Vector2(0, -40)
+script = ExtResource("6_qgay0")
+parent = NodePath("..")
+radius = 8
+
+[node name="Gravity" type="Node" parent="." node_paths=PackedStringArray("parent")]
+script = ExtResource("6_1gk1c")
+parent = NodePath("..")
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("parent", "default_state")]
+script = ExtResource("7_32ph4")
+parent = NodePath("..")
+default_state = NodePath("GunnerIdle")
+
+[node name="GunnerIdle" type="Node" parent="StateMachine" node_paths=PackedStringArray("jet_particles", "gravity", "circular_movement", "gun_sprite", "bullet_marker", "parent")]
+script = ExtResource("8_5xo15")
+jet_particles = NodePath("../../ParticleJet")
+gravity = NodePath("../../Gravity")
+circular_movement = NodePath("../../CircularMovement")
+bullet_scene = ExtResource("10_e4hee")
+gun_sprite = NodePath("../../SpriteGunner/SpriteGun")
+bullet_marker = NodePath("../../SpriteGunner/SpriteGun/BulletMarker")
+shot_count = 6
+parent = NodePath("../..")
+
+[node name="TimerStart" type="Timer" parent="."]
+wait_time = 2.3
+one_shot = true
+autostart = true
+
+[node name="TimerRefire" type="Timer" parent="."]
+wait_time = 0.1
+one_shot = true
+
+[node name="SfxShoot" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, -40)
+stream = ExtResource("11_ov1sw")
+max_distance = 750.0
+
+[node name="SfxCock" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_p8h73")
+volume_db = -14.495
+max_distance = 750.0
+
+[connection signal="timeout" from="TimerStart" to="StateMachine/GunnerIdle" method="_on_timer_start_timeout"]
+[connection signal="timeout" from="TimerRefire" to="StateMachine/GunnerIdle" method="_on_timer_refire_timeout"]

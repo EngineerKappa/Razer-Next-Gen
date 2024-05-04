@@ -1,0 +1,8 @@
+InstancePivot
+AreaTransition
+Sprite2D
+Node2D
+HitboxNeutral
+HitboxHazard
+RigidBody2D
+AnimatableBody2D

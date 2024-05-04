@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ibrenaucmq70"
+path="res://.godot/imported/electric zap.WAV-0bf546ee93b6a5eed059517aafe258ec.sample"
+
+[deps]
+
+source_file="res://SFX/electric zap.WAV"
+dest_files=["res://.godot/imported/electric zap.WAV-0bf546ee93b6a5eed059517aafe258ec.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

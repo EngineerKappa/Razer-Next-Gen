@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dcfi3j6deox76"
+path="res://.godot/imported/Sonic the Hedgehog (2006) - Kingdom Valley ~ Water.ogg-e03307465c0f2072b902e0e15a9089bc.oggvorbisstr"
+
+[deps]
+
+source_file="res://BGM/Sonic the Hedgehog (2006) - Kingdom Valley ~ Water.ogg"
+dest_files=["res://.godot/imported/Sonic the Hedgehog (2006) - Kingdom Valley ~ Water.ogg-e03307465c0f2072b902e0e15a9089bc.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

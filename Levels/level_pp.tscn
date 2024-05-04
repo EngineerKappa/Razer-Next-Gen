@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://bt65qut72ldug"]
+
+[ext_resource type="Script" path="res://Scripts/Level.gd" id="1_0p54n"]
+[ext_resource type="AudioStream" uid="uid://cbjnt6hoabtht" path="res://BGM/STH-Marble_GoodFutureRemix.ogg" id="2_gpc43"]
+[ext_resource type="PackedScene" uid="uid://cc1ivq2r0i52h" path="res://Objects/hud.tscn" id="3_drpli"]
+[ext_resource type="PackedScene" uid="uid://cbc0ae2sn7j0v" path="res://Objects/ScreenFade.tscn" id="4_voim3"]
+
+[node name="Level" type="Node2D" node_paths=PackedStringArray("bgm_player", "screen_fade")]
+script = ExtResource("1_0p54n")
+initial_scene_path = "res://Levels/room_pp1.tscn"
+next_scene_path = "res://Interface/CingeCrawl.tscn"
+bgm_player = NodePath("BGM")
+screen_fade = NodePath("HUD/ScreenFade")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_gpc43")
+volume_db = -6.828
+autoplay = true
+
+[node name="HUD" parent="." instance=ExtResource("3_drpli")]
+
+[node name="ScreenFade" parent="HUD" instance=ExtResource("4_voim3")]
+offset_left = -112.0
+offset_top = -56.0
+offset_right = -112.0
+offset_bottom = -56.0
+target_color = Color(0, 0, 0, 0)
+start_color = Color(0, 0, 0, 1)
+time_to_fade = 0.25
+hang_time = 0.0
+metadata/_edit_lock_ = true

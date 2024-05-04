@@ -1,0 +1,88 @@
+[gd_scene load_steps=13 format=3 uid="uid://djtcvometdy07"]
+
+[ext_resource type="Texture2D" uid="uid://dtyfx5md43wlc" path="res://Graphics/Objects/Ring.png" id="1_k1gqb"]
+[ext_resource type="Script" path="res://Scripts/Objects/Ring.gd" id="1_yria5"]
+[ext_resource type="Texture2D" uid="uid://bv0r63xge2gih" path="res://Graphics/Particles/spark.png" id="3_oq1m7"]
+[ext_resource type="Material" uid="uid://blxov2qxlbefs" path="res://Objects/unlit_mix.tres" id="3_w5i18"]
+[ext_resource type="AudioStream" uid="uid://fbjq1jftilr0" path="res://SFX/ring.WAV" id="4_7enkp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hhrpm"]
+size = Vector2(32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uior2"]
+atlas = ExtResource("1_k1gqb")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwix4"]
+atlas = ExtResource("1_k1gqb")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oareb"]
+atlas = ExtResource("1_k1gqb")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jkytn"]
+atlas = ExtResource("1_k1gqb")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gq3k8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uior2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwix4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oareb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jkytn")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="Curve" id="Curve_hcn6i"]
+_data = [Vector2(0, 1.00497), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Ring" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_yria5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_hhrpm")
+debug_color = Color(0, 1, 0, 0.137255)
+
+[node name="Animations" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_gq3k8")
+autoplay = "default"
+frame_progress = 0.798624
+
+[node name="Particle" type="CPUParticles2D" parent="."]
+material = ExtResource("3_w5i18")
+emitting = false
+amount = 3
+one_shot = true
+explosiveness = 1.0
+texture = ExtResource("3_oq1m7")
+emission_shape = 1
+emission_sphere_radius = 16.72
+gravity = Vector2(0, 0)
+angular_velocity_min = 162.58
+angular_velocity_max = 162.58
+scale_amount_min = 0.6
+scale_amount_max = 0.6
+scale_amount_curve = SubResource("Curve_hcn6i")
+color = Color(1, 1, 0, 1)
+
+[node name="SfxRing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_7enkp")
+volume_db = -6.303
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="Particle" to="." method="_on_particle_finished"]

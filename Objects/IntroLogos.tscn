@@ -1,0 +1,203 @@
+[gd_scene load_steps=15 format=3 uid="uid://rxq7hls5tija"]
+
+[ext_resource type="Texture2D" uid="uid://b8uvytud5j5bj" path="res://Graphics/Interface/Sonic Team.png" id="1_mlfta"]
+[ext_resource type="Script" path="res://Scripts/Interface/IntroLogos.gd" id="1_q35qe"]
+[ext_resource type="Script" path="res://Scripts/Interface/ScreenFade.gd" id="2_hylpw"]
+[ext_resource type="Texture2D" uid="uid://bgbhxc5avk3xm" path="res://Graphics/Interface/Sega.png" id="3_c2spf"]
+[ext_resource type="FontFile" uid="uid://bylgjqlio7h4u" path="res://Themes/impact.ttf" id="4_3yxiy"]
+[ext_resource type="AudioStream" uid="uid://fbjq1jftilr0" path="res://SFX/ring.WAV" id="6_ygnvn"]
+[ext_resource type="Texture2D" uid="uid://dd11jn8fi3rsh" path="res://Graphics/Interface/EngineerKappa.png" id="7_mk1w1"]
+[ext_resource type="AudioStream" uid="uid://cinqv5b31hqqp" path="res://SFX/snBuddChange.wav" id="8_jd5h6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6f3tx"]
+font = ExtResource("4_3yxiy")
+font_size = 20
+font_color = Color(0.509804, 0.509804, 0.509804, 1)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kl5uh"]
+atlas = ExtResource("7_mk1w1")
+region = Rect2(672, 0, 224, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k8rqe"]
+atlas = ExtResource("7_mk1w1")
+region = Rect2(0, 0, 224, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3dlbs"]
+atlas = ExtResource("7_mk1w1")
+region = Rect2(224, 0, 224, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jeb8"]
+atlas = ExtResource("7_mk1w1")
+region = Rect2(448, 0, 224, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6bn68"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kl5uh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k8rqe")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3dlbs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jeb8")
+}],
+"loop": true,
+"name": &"glow",
+"speed": 5.0
+}]
+
+[node name="IntroLogos" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_q35qe")
+next_scene_path = "res://TitleScreen.tscn"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -336.0
+offset_top = -256.0
+offset_right = 336.0
+offset_bottom = 256.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="SegaSonic" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="SegaSonic"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 226.5
+offset_top = 74.5
+offset_right = 375.5
+offset_bottom = 100.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Original Games by"
+label_settings = SubResource("LabelSettings_6f3tx")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="SegaSonic"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 228.0
+offset_top = 242.5
+offset_right = 374.0
+offset_bottom = 268.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "And"
+label_settings = SubResource("LabelSettings_6f3tx")
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="SegaSonic"]
+layout_mode = 0
+offset_left = 136.0
+offset_top = 296.0
+offset_right = 505.0
+offset_bottom = 401.0
+texture = ExtResource("1_mlfta")
+
+[node name="TextureRect2" type="TextureRect" parent="SegaSonic"]
+layout_mode = 0
+offset_left = 128.0
+offset_top = 128.0
+offset_right = 516.0
+offset_bottom = 248.0
+texture = ExtResource("3_c2spf")
+
+[node name="EngineerKappa" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="EngineerKappa"]
+position = Vector2(320, 256)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_6bn68")
+animation = &"glow"
+frame_progress = 0.246164
+
+[node name="Label" type="Label" parent="EngineerKappa"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 228.0
+offset_top = 188.0
+offset_right = 377.0
+offset_bottom = 214.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Fangame made by"
+label_settings = SubResource("LabelSettings_6f3tx")
+horizontal_alignment = 1
+
+[node name="ScreenFadeIn" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 0)
+script = ExtResource("2_hylpw")
+target_color = Color(0, 0, 0, 0)
+start_color = Color(0, 0, 0, 1)
+time_to_fade = 0.8
+hang_time = 0.0
+
+[node name="ScreenFadeOut" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 0)
+script = ExtResource("2_hylpw")
+enabled = false
+hang_time = 0.4
+invisible_on_finish = true
+
+[node name="SfxSegaSonic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_ygnvn")
+volume_db = -0.145
+
+[node name="SfxEngineerKappa" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_jd5h6")
+volume_db = 2.101
+
+[node name="Refade" type="Timer" parent="."]
+one_shot = true
+
+[connection signal="fade_finish" from="ScreenFadeIn" to="." method="_on_screen_fade_in_fade_finish"]
+[connection signal="fade_finish" from="ScreenFadeOut" to="." method="_on_screen_fade_out_fade_finish"]
+[connection signal="hang_time_start" from="ScreenFadeOut" to="." method="_on_screen_fade_out_hang_time_start"]
+[connection signal="timeout" from="Refade" to="." method="_on_refade_timeout"]

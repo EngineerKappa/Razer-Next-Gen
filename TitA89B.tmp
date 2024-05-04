@@ -1,0 +1,75 @@
+[gd_scene load_steps=8 format=3 uid="uid://57xdyvmpnisj"]
+
+[ext_resource type="Script" path="res://TitleScreen.gd" id="1_7v7oj"]
+[ext_resource type="Texture2D" uid="uid://bxrl5bl8mx2us" path="res://Graphics/Interface/TitleScreen.png" id="1_pumsm"]
+[ext_resource type="FontFile" uid="uid://bylgjqlio7h4u" path="res://Themes/impact.ttf" id="2_jwa8t"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fjasl"]
+font = ExtResource("2_jwa8t")
+font_size = 30
+shadow_size = 14
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Animation" id="Animation_3dufg"]
+resource_name = "Title"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:label_settings:font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_fp4mf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label:label_settings:font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8800m"]
+_data = {
+"RESET": SubResource("Animation_fp4mf"),
+"Title": SubResource("Animation_3dufg")
+}
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7v7oj")
+
+[node name="TitleScreen" type="Sprite2D" parent="."]
+position = Vector2(320, 240)
+texture = ExtResource("1_pumsm")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 216.0
+offset_top = 408.0
+offset_right = 425.0
+offset_bottom = 446.0
+text = "Press Start/Enter"
+label_settings = SubResource("LabelSettings_fjasl")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_8800m")
+}

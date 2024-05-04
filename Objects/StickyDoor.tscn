@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://d03ggbjntx1vf"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/AreaTransition.gd" id="1_4uo4m"]
+[ext_resource type="Texture2D" uid="uid://csrr1nhq6ncpm" path="res://Graphics/Objects/Levels/Purple Palace/exit.png" id="2_rs1w4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5k2sd"]
+size = Vector2(56, 64)
+
+[node name="StickyDoor" type="Area2D"]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_4uo4m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, -32)
+shape = SubResource("RectangleShape2D_5k2sd")
+debug_color = Color(1, 0.6, 0.701961, 0.419608)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -29)
+texture = ExtResource("2_rs1w4")

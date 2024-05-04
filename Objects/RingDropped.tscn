@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://dy3sxlnfp1w52"]
+
+[ext_resource type="PackedScene" uid="uid://djtcvometdy07" path="res://Objects/Ring.tscn" id="1_fy37o"]
+[ext_resource type="Script" path="res://Scripts/Objects/RingDropped.gd" id="1_tbpwj"]
+[ext_resource type="Script" path="res://Scripts/Shared/TimerDisappear.gd" id="3_w4sjp"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ie8u5"]
+radius = 11.0
+
+[node name="RingDropped" type="CharacterBody2D" node_paths=PackedStringArray("ring_object")]
+collision_layer = 0
+floor_stop_on_slope = false
+floor_block_on_wall = false
+script = ExtResource("1_tbpwj")
+ring_object = NodePath("Ring")
+
+[node name="Ring" parent="." instance=ExtResource("1_fy37o")]
+collectable = false
+dropped = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ie8u5")
+
+[node name="TimerDisappear" type="Timer" parent="." node_paths=PackedStringArray("disappearing_object")]
+wait_time = 4.0
+one_shot = true
+autostart = true
+script = ExtResource("3_w4sjp")
+disappearing_object = NodePath("..")
+grace_period = 0.25
+
+[connection signal="grace_period_ended" from="TimerDisappear" to="Ring" method="_on_timer_disappear_grace_period_ended"]
+[connection signal="timeout" from="TimerDisappear" to="." method="_on_timer_disappear_timeout"]

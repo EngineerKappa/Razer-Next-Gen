@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=3 uid="uid://c6vnq7o3bn80a"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/BounceFloor.gd" id="1_30n2k"]
+[ext_resource type="Texture2D" uid="uid://b2tpee0u8lq60" path="res://Graphics/Objects/BounceVine.png" id="2_o28l1"]
+[ext_resource type="AudioStream" uid="uid://bhfrfd8sbvo2y" path="res://SFX/boing.wav" id="3_a8ppc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sywuq"]
+size = Vector2(96, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8gq1m"]
+atlas = ExtResource("2_o28l1")
+region = Rect2(112, 0, 112, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jexix"]
+atlas = ExtResource("2_o28l1")
+region = Rect2(224, 0, 112, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hjd7"]
+atlas = ExtResource("2_o28l1")
+region = Rect2(336, 0, 112, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c47mt"]
+atlas = ExtResource("2_o28l1")
+region = Rect2(448, 0, 112, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m0won"]
+atlas = ExtResource("2_o28l1")
+region = Rect2(560, 0, 112, 41)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mfpk"]
+atlas = ExtResource("2_o28l1")
+region = Rect2(0, 0, 112, 41)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_v5qhw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8gq1m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jexix")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6hjd7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c47mt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m0won")
+}],
+"loop": false,
+"name": &"Bounce",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mfpk")
+}],
+"loop": true,
+"name": &"Default",
+"speed": 5.0
+}]
+
+[node name="BounceFloor" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_30n2k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_sywuq")
+debug_color = Color(1, 0.6, 0.701961, 0.419608)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, 3)
+sprite_frames = SubResource("SpriteFrames_v5qhw")
+animation = &"Default"
+
+[node name="SfxBounce" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_a8ppc")
+volume_db = -13.391
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

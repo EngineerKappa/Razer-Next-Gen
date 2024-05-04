@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dm8eaea38lkll"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/SpikePivot.gd" id="1_84or0"]
+[ext_resource type="Texture2D" uid="uid://bua5stb21by18" path="res://Graphics/Objects/Spike Ball Pivot.png" id="1_xqh0y"]
+[ext_resource type="PackedScene" uid="uid://bwarasouc14df" path="res://Objects/Spike Ball.tscn" id="2_innqx"]
+[ext_resource type="AudioStream" uid="uid://d4k1nlwbgn6wk" path="res://SFX/Swinging spikes.WAV" id="4_t86bu"]
+
+[node name="SpikePivot" type="Node2D"]
+script = ExtResource("1_84or0")
+scene_to_spawn = ExtResource("2_innqx")
+amount_of_instances = 2
+spin_radius = 40.0
+
+[node name="SpritePivot" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+texture = ExtResource("1_xqh0y")
+
+[node name="SfxSwing" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_t86bu")
+volume_db = 0.542
+autoplay = true
+max_distance = 480.0

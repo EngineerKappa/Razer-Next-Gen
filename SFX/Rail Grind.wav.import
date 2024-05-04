@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dea5kirbxdui3"
+path="res://.godot/imported/Rail Grind.wav-0579d6c2a74a48e9b0f42d745adcc930.sample"
+
+[deps]
+
+source_file="res://SFX/Rail Grind.wav"
+dest_files=["res://.godot/imported/Rail Grind.wav-0579d6c2a74a48e9b0f42d745adcc930.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

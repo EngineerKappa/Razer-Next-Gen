@@ -1,0 +1,97 @@
+[gd_scene load_steps=11 format=3 uid="uid://b0ovth1mi4ev6"]
+
+[ext_resource type="Script" path="res://Scripts/Interface/TitleScreen.gd" id="1_kwyf5"]
+[ext_resource type="PackedScene" uid="uid://bt65qut72ldug" path="res://Levels/level_pp.tscn" id="2_5g8re"]
+[ext_resource type="Texture2D" uid="uid://dix6gva7cjp11" path="res://Graphics/Cutscenes/Razer vs Silver.png" id="3_sq6n0"]
+[ext_resource type="AudioStream" uid="uid://gw0be0d2f0yj" path="res://BGM/Sonic the Hedgehog (2006) - His World.ogg" id="4_aiitt"]
+[ext_resource type="AudioStream" uid="uid://ba43d7q27yyp8" path="res://SFX/Menu Select.WAV" id="5_jqalu"]
+[ext_resource type="FontFile" uid="uid://cnxedrvkfma8u" path="res://Themes/comic.ttf" id="6_n6py6"]
+[ext_resource type="Script" path="res://Interface/TextCrawl.gd" id="7_5bu8x"]
+[ext_resource type="Material" uid="uid://dmecugxdf67x" path="res://Objects/unlit_add.tres" id="8_g5rto"]
+[ext_resource type="Script" path="res://Scripts/Interface/ScreenFade.gd" id="9_7nowq"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_uylj4"]
+line_spacing = 0.0
+font = ExtResource("6_n6py6")
+outline_size = 8
+outline_color = Color(0, 0, 0, 1)
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kwyf5")
+press_start_allowed = true
+next_scene = ExtResource("2_5g8re")
+
+[node name="TitleScreen" type="Sprite2D" parent="."]
+modulate = Color(0.396078, 0.584314, 0.74902, 1)
+position = Vector2(320, 240)
+texture = ExtResource("3_sq6n0")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_aiitt")
+volume_db = 0.526
+autoplay = true
+
+[node name="SfxPressed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_jqalu")
+volume_db = -4.0
+
+[node name="Text" type="Label" parent="."]
+layout_mode = 0
+offset_left = 24.0
+offset_top = 488.0
+offset_right = 416.0
+offset_bottom = 1408.0
+text = "After making my way through the forest and escaping the ruins, I reach the nearest city. 
+
+\"It's no use!\", I hear somebody shout in  the distance.
+
+I run towards the source of the commotion and see a floating silver colored hedgehog -- is he lifting those tables with his mind?!
+
+I look just below him, and to my surprise, Sonic the Hedgehog is on the ground, looking like he's taken a serious beating.
+
+\"This will end it!\", the floating hedgehog yells, winding up to launch a crate directly at Sonic.
+
+I can't just sit here, I have to stop him!
+
+\"You there, with the green hair! If you think you can get in the way of me defeating the Iblis Trigger, I'll make you regret ever stepping foot in this town!\"
+
+
+----------------[TO BE CONTINUED]----------------
+---------------------------------------------------------
+\"Hey everyone, Raz--- I mean, EngineerKappa here! Thanks for taking the time to try out this silly project I've been working on!
+I started making this fangame as a fun learning exercise to learn Godot with, and I thought it would be a fun thing to do for Freakjam, a small jam hosted by my friend KrazyScr-- errr, SuperFreaksDev. Yeah.
+
+Speaking of, you didn't think that was all I made for this demo, did you? Here's an extra level made just for Freakjam! 
+WOOPIE!\"
+
+[Press Start/Enter to continue]"
+label_settings = SubResource("LabelSettings_uylj4")
+autowrap_mode = 3
+script = ExtResource("7_5bu8x")
+
+[node name="FadeIn" type="ColorRect" parent="."]
+material = ExtResource("8_g5rto")
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("9_7nowq")
+target_color = Color(0, 0, 0, 0)
+start_color = Color(1, 1, 1, 1)
+time_to_fade = 1.0
+free_on_finish = true
+
+[node name="FadeOut" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("9_7nowq")
+enabled = false
+hang_time = 1.0
+
+[connection signal="fade_finish" from="FadeOut" to="." method="_on_fade_out_fade_finish"]

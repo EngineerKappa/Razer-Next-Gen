@@ -1,0 +1,79 @@
+[gd_scene load_steps=13 format=3 uid="uid://ib82oqwofxlr"]
+
+[ext_resource type="Texture2D" uid="uid://dre3744yxbwlc" path="res://Graphics/Objects/Levels/torch.png" id="1_gcb7k"]
+[ext_resource type="Material" uid="uid://dmecugxdf67x" path="res://Objects/unlit_add.tres" id="2_5c75p"]
+[ext_resource type="Texture2D" uid="uid://qjfq3s20dr0v" path="res://Graphics/Particles/flare.png" id="2_ahsbk"]
+[ext_resource type="Texture2D" uid="uid://kqn8ke1klewa" path="res://Graphics/Particles/smoke.png" id="3_6da8t"]
+[ext_resource type="Material" uid="uid://blxov2qxlbefs" path="res://Objects/unlit_mix.tres" id="3_dut2h"]
+[ext_resource type="Texture2D" uid="uid://c6ln3dwmhxbbg" path="res://Graphics/Particles/sphere.png" id="6_qe1no"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4jbmw"]
+atlas = ExtResource("1_gcb7k")
+region = Rect2(0, 0, 31, 124)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8cpd"]
+atlas = ExtResource("1_gcb7k")
+region = Rect2(31, 0, 31, 124)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ogln"]
+atlas = ExtResource("1_gcb7k")
+region = Rect2(62, 0, 31, 124)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rkqiw"]
+atlas = ExtResource("1_gcb7k")
+region = Rect2(93, 0, 31, 124)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d5wy6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4jbmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8cpd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ogln")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rkqiw")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_10kjl"]
+offsets = PackedFloat32Array(0.489231, 0.763077, 1)
+colors = PackedColorArray(1, 0.45, 0, 1, 0.22, 0.22, 0.22, 1, 0, 0, 0, 0)
+
+[node name="KVTorch" type="AnimatedSprite2D"]
+position = Vector2(1, -60)
+sprite_frames = SubResource("SpriteFrames_d5wy6")
+autoplay = "default"
+frame_progress = 0.247949
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0.686275, 0.0588235, 1)
+material = ExtResource("2_5c75p")
+position = Vector2(-1, -24)
+scale = Vector2(1.25, 2.375)
+texture = ExtResource("2_ahsbk")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
+material = ExtResource("3_dut2h")
+position = Vector2(-1, -36)
+texture = ExtResource("3_6da8t")
+emission_shape = 1
+emission_sphere_radius = 11.23
+gravity = Vector2(0, -120)
+scale_amount_min = 0.01
+scale_amount_max = 0.1
+color_ramp = SubResource("Gradient_10kjl")
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(-1, -36)
+scale = Vector2(1.32, 1.4)
+color = Color(1, 0.709804, 0.329412, 1)
+texture = ExtResource("6_qe1no")
+texture_scale = 8.07

@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://757w6xh81n80"]
+
+[ext_resource type="Texture2D" uid="uid://cccrbajagvkxy" path="res://Graphics/Objects/crate.png" id="1_4sr2e"]
+[ext_resource type="Script" path="res://Scripts/Objects/RigidBodyProjectile.gd" id="1_teuhi"]
+[ext_resource type="Script" path="res://Scripts/Shared/HitboxNeutral.gd" id="2_5kxas"]
+[ext_resource type="PackedScene" uid="uid://beg24n2prje7v" path="res://Objects/CrateDebris.tscn" id="2_vtoeg"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_xrx6n"]
+bounce = 0.1
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xaeob"]
+size = Vector2(64, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gupic"]
+size = Vector2(55, 53)
+
+[node name="Crate" type="RigidBody2D"]
+collision_mask = 7
+physics_material_override = SubResource("PhysicsMaterial_xrx6n")
+script = ExtResource("1_teuhi")
+debris_scene = ExtResource("2_vtoeg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -32)
+texture = ExtResource("1_4sr2e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -32)
+shape = SubResource("RectangleShape2D_xaeob")
+
+[node name="HitboxNeutral" type="Area2D" parent="." node_paths=PackedStringArray("hazard_object")]
+collision_mask = 7
+script = ExtResource("2_5kxas")
+hazard_object = NodePath("..")
+damage_type = "Physics"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxNeutral"]
+position = Vector2(-0.5, -28.5)
+shape = SubResource("RectangleShape2D_gupic")
+debug_color = Color(1, 0.6, 0.701961, 0.419608)
+
+[connection signal="body_entered" from="HitboxNeutral" to="." method="_on_hitbox_neutral_body_entered"]

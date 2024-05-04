@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://so2u6oedu5v3"]
+
+[ext_resource type="Material" uid="uid://blxov2qxlbefs" path="res://Objects/unlit_mix.tres" id="1_pjcf4"]
+[ext_resource type="Script" path="res://Scripts/Enemies/BadnikExplosion.gd" id="1_sb4u0"]
+[ext_resource type="AudioStream" uid="uid://04c5f5e6wk57" path="res://SFX/Badnik Explosion.WAV" id="1_yvxip"]
+[ext_resource type="Texture2D" uid="uid://qjfq3s20dr0v" path="res://Graphics/Particles/flare.png" id="2_t8dxk"]
+
+[sub_resource type="Gradient" id="Gradient_y3x82"]
+offsets = PackedFloat32Array(0.68, 1)
+colors = PackedColorArray(0.79, 0.79, 0, 1, 0.34, 0.34, 0, 0)
+
+[sub_resource type="Gradient" id="Gradient_agaxk"]
+offsets = PackedFloat32Array(0.652308, 0.886154)
+colors = PackedColorArray(0.658911, 1.9132e-06, 5.29438e-07, 1, 0.341176, 0, 0, 0)
+
+[node name="BadnikExplosion" type="Node2D"]
+script = ExtResource("1_sb4u0")
+
+[node name="SfxExplosion" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_yvxip")
+autoplay = true
+
+[node name="YellowExplosion" type="CPUParticles2D" parent="."]
+material = ExtResource("1_pjcf4")
+emitting = false
+amount = 40
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 0.45
+texture = ExtResource("2_t8dxk")
+emission_shape = 1
+emission_sphere_radius = 16.62
+spread = 180.0
+gravity = Vector2(0, 300)
+initial_velocity_max = 181.64
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+color_ramp = SubResource("Gradient_y3x82")
+
+[node name="RedExplosion" type="CPUParticles2D" parent="."]
+material = ExtResource("1_pjcf4")
+emitting = false
+amount = 40
+one_shot = true
+explosiveness = 1.0
+lifetime_randomness = 0.45
+texture = ExtResource("2_t8dxk")
+emission_shape = 1
+emission_sphere_radius = 16.62
+spread = 180.0
+gravity = Vector2(0, 300)
+initial_velocity_max = 128.1
+scale_amount_min = 0.2
+scale_amount_max = 0.2
+color_ramp = SubResource("Gradient_agaxk")
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

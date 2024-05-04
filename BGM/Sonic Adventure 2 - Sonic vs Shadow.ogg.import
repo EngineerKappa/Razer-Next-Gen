@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cvcnulenc38q3"
+path="res://.godot/imported/Sonic Adventure 2 - Sonic vs Shadow.ogg-4029cb6b3744181e9d969a3fc0670cf8.oggvorbisstr"
+
+[deps]
+
+source_file="res://BGM/Sonic Adventure 2 - Sonic vs Shadow.ogg"
+dest_files=["res://.godot/imported/Sonic Adventure 2 - Sonic vs Shadow.ogg-4029cb6b3744181e9d969a3fc0670cf8.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

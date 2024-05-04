@@ -1,0 +1,255 @@
+[gd_scene load_steps=21 format=3 uid="uid://beg24n2prje7v"]
+
+[ext_resource type="Script" path="res://Scripts/Objects/DebrisController.gd" id="1_3yn8w"]
+[ext_resource type="PhysicsMaterial" uid="uid://ckcmncmswrmf8" path="res://Objects/debris_material.tres" id="1_lkdj0"]
+[ext_resource type="Texture2D" uid="uid://6oipmh8gtvsm" path="res://Graphics/Objects/Crate Debris/crate1.png" id="2_xej4p"]
+[ext_resource type="Texture2D" uid="uid://de4odcks538r" path="res://Graphics/Objects/Crate Debris/crate2.png" id="3_r2ydo"]
+[ext_resource type="Script" path="res://Scripts/Shared/TimerDisappear.gd" id="4_bx4i0"]
+[ext_resource type="AudioStream" uid="uid://bgahn73sjmnxw" path="res://SFX/Crate burst.wav" id="5_siv4l"]
+[ext_resource type="Texture2D" uid="uid://dgotmfnkq471w" path="res://Graphics/Objects/Crate Debris/crate3.png" id="5_xvbxh"]
+[ext_resource type="Texture2D" uid="uid://chp24wx0gn5cc" path="res://Graphics/Objects/Crate Debris/crate4.png" id="6_acw32"]
+[ext_resource type="Texture2D" uid="uid://dxcoevd0n28u7" path="res://Graphics/Objects/Crate Debris/crate5.png" id="7_fyp7x"]
+[ext_resource type="Texture2D" uid="uid://b8kymt3djrbxj" path="res://Graphics/Objects/Crate Debris/crate6.png" id="8_dt6uf"]
+[ext_resource type="Texture2D" uid="uid://c5mm47vmlv1xb" path="res://Graphics/Objects/Crate Debris/crate7.png" id="9_d30kn"]
+[ext_resource type="Texture2D" uid="uid://cultbgi6658m3" path="res://Graphics/Objects/Crate Debris/crate8.png" id="10_pu18e"]
+[ext_resource type="Texture2D" uid="uid://dpj54tu4ps11w" path="res://Graphics/Objects/Crate Debris/crate9.png" id="11_2iyj4"]
+[ext_resource type="Texture2D" uid="uid://nra63122txnv" path="res://Graphics/Objects/Crate Debris/crate10.png" id="12_alr0o"]
+[ext_resource type="Texture2D" uid="uid://dx347jo3kt6fy" path="res://Graphics/Objects/Crate Debris/crate11.png" id="13_yve14"]
+[ext_resource type="Texture2D" uid="uid://cbxfi15rm1lyp" path="res://Graphics/Objects/Crate Debris/crate12.png" id="14_odtlc"]
+[ext_resource type="Texture2D" uid="uid://cjw02q1rkvgpt" path="res://Graphics/Particles/explosion.png" id="17_sk0q3"]
+
+[sub_resource type="Curve" id="Curve_f5f5i"]
+min_value = 1.0
+max_value = 2.0
+_data = [Vector2(0, 1), 0.0, 1.0, 0, 1, Vector2(1, 2), 1.0, 0.0, 1, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_5y1mc"]
+offsets = PackedFloat32Array(0.621538, 0.935385)
+colors = PackedColorArray(1, 1, 1, 0.223529, 1, 1, 1, 0)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_gwi1q"]
+radius = 63.0317
+
+[node name="CrateDebris" type="Node2D"]
+script = ExtResource("1_3yn8w")
+particle_effect = NodePath("Puff")
+aftershock_area = NodePath("Aftershock")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(-26, -42)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+texture = ExtResource("2_xej4p")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
+position = Vector2(-4, -14)
+polygon = PackedVector2Array(0, 0, 8, 0, 8, 26, 0, 19)
+
+[node name="RigidBody2D2" type="RigidBody2D" parent="."]
+position = Vector2(-26, -23)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D2"]
+texture = ExtResource("3_r2ydo")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D2"]
+position = Vector2(-4, -14)
+polygon = PackedVector2Array(0, 0, 8, 8, 8, 28, 0, 28)
+
+[node name="RigidBody2D3" type="RigidBody2D" parent="."]
+position = Vector2(-12, -60)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D3"]
+texture = ExtResource("5_xvbxh")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D3"]
+position = Vector2(-12, -9)
+polygon = PackedVector2Array(-6, 4, 14, 4, 34, 13, -6, 13)
+
+[node name="RigidBody2D4" type="RigidBody2D" parent="."]
+position = Vector2(14, -60)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D4"]
+texture = ExtResource("6_acw32")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D4"]
+position = Vector2(-12, -9)
+polygon = PackedVector2Array(-5, 4, 31, 4, 31, 13, 6, 13)
+
+[node name="RigidBody2D5" type="RigidBody2D" parent="."]
+position = Vector2(29, -42)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D5"]
+texture = ExtResource("7_fyp7x")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D5"]
+position = Vector2(-12, -9)
+polygon = PackedVector2Array(8, -5, 16, -5, 16, 14, 8, 15)
+
+[node name="RigidBody2D6" type="RigidBody2D" parent="."]
+position = Vector2(29, -22)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D6"]
+texture = ExtResource("8_dt6uf")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D6"]
+position = Vector2(-12, -1)
+polygon = PackedVector2Array(8, -9, 16, -12, 16, 14, 8, 14)
+
+[node name="RigidBody2D7" type="RigidBody2D" parent="."]
+position = Vector2(-12, -5)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D7"]
+texture = ExtResource("9_d30kn")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D7"]
+position = Vector2(-12, -1)
+polygon = PackedVector2Array(-6, 5, -6, -3, 17, -3, 26, 5)
+
+[node name="RigidBody2D8" type="RigidBody2D" parent="."]
+position = Vector2(14, -5)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D8"]
+texture = ExtResource("10_pu18e")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D8"]
+position = Vector2(-12, -1)
+polygon = PackedVector2Array(2, 5, -7, -3, 32, -3, 32, 5)
+
+[node name="RigidBody2D9" type="RigidBody2D" parent="."]
+position = Vector2(-9, -40)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D9"]
+texture = ExtResource("11_2iyj4")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D9"]
+position = Vector2(-12, -1)
+polygon = PackedVector2Array(-1, 17, -1, -14, 23, -14, 23, 5)
+
+[node name="RigidBody2D10" type="RigidBody2D" parent="."]
+position = Vector2(14, -42)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D10"]
+texture = ExtResource("12_alr0o")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D10"]
+position = Vector2(-12, -1)
+polygon = PackedVector2Array(1, 14, 1, -12, 22, -12, 22, 5)
+
+[node name="RigidBody2D11" type="RigidBody2D" parent="."]
+position = Vector2(15, -23)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D11"]
+texture = ExtResource("13_yve14")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D11"]
+position = Vector2(-12, -1)
+polygon = PackedVector2Array(8, 14, 2, -4, 21, -13, 21, 14)
+
+[node name="RigidBody2D12" type="RigidBody2D" parent="."]
+position = Vector2(-5, -21)
+collision_layer = 16
+collision_mask = 17
+mass = 0.5
+physics_material_override = ExtResource("1_lkdj0")
+center_of_mass_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D12"]
+texture = ExtResource("14_odtlc")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D12"]
+position = Vector2(-12, -1)
+polygon = PackedVector2Array(-4, 12, -4, -1, 17, -10, 23, 12)
+
+[node name="TimerDisappear" type="Timer" parent="." node_paths=PackedStringArray("disappearing_object")]
+wait_time = 4.0
+autostart = true
+script = ExtResource("4_bx4i0")
+disappearing_object = NodePath("..")
+
+[node name="SfxBreak" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_siv4l")
+volume_db = -12.081
+autoplay = true
+max_distance = 640.0
+
+[node name="Puff" type="CPUParticles2D" parent="."]
+position = Vector2(1, -34)
+emitting = false
+amount = 2
+one_shot = true
+explosiveness = 0.89
+lifetime_randomness = 0.28
+texture = ExtResource("17_sk0q3")
+gravity = Vector2(0, -60)
+angular_velocity_min = -224.52
+angular_velocity_max = 224.52
+angle_min = -224.5
+scale_amount_curve = SubResource("Curve_f5f5i")
+color_ramp = SubResource("Gradient_5y1mc")
+
+[node name="Aftershock" type="Area2D" parent="."]
+collision_layer = 17
+collision_mask = 17
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Aftershock"]
+position = Vector2(1, -32)
+shape = SubResource("CircleShape2D_gwi1q")
+
+[connection signal="timeout" from="TimerDisappear" to="." method="_on_timer_disappear_timeout"]
+[connection signal="body_entered" from="Aftershock" to="." method="_on_aftershock_body_entered"]

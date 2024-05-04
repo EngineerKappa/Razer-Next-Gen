@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://d15ixphwtdv47"]
+
+[ext_resource type="Script" path="res://Scripts/Level.gd" id="1_2t4aw"]
+[ext_resource type="AudioStream" uid="uid://c51a8jjg8y0yh" path="res://BGM/Sonic the Hedgehog (2006) - Kingdom Valley ~ The Wind.ogg" id="5_jdi6y"]
+[ext_resource type="PackedScene" uid="uid://cc1ivq2r0i52h" path="res://Objects/hud.tscn" id="11_h4ite"]
+[ext_resource type="PackedScene" uid="uid://cbc0ae2sn7j0v" path="res://Objects/ScreenFade.tscn" id="12_dxu8x"]
+
+[node name="Level" type="Node2D" node_paths=PackedStringArray("bgm_player", "screen_fade")]
+script = ExtResource("1_2t4aw")
+initial_scene_path = "res://Levels/room_kv1a.tscn"
+next_scene_path = "res://Interface/SilverCrawl.tscn"
+bgm_player = NodePath("BGM")
+screen_fade = NodePath("HUD/ScreenFade")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_jdi6y")
+volume_db = 3.152
+autoplay = true
+
+[node name="HUD" parent="." instance=ExtResource("11_h4ite")]
+
+[node name="ScreenFade" parent="HUD" instance=ExtResource("12_dxu8x")]
+offset_left = -112.0
+offset_top = -56.0
+offset_right = -112.0
+offset_bottom = -56.0
+target_color = Color(0, 0, 0, 0)
+start_color = Color(0, 0, 0, 1)
+time_to_fade = 0.25
+hang_time = 0.0
+metadata/_edit_lock_ = true

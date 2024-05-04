@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=3 uid="uid://cjh7o5ndwc2yh"]
+
+[ext_resource type="Script" path="res://Scripts/Enemies/Enemy.gd" id="1_bb10r"]
+[ext_resource type="Texture2D" uid="uid://7ae2rqihblj4" path="res://Graphics/Enemies/Egg Flyer.png" id="2_j7rdp"]
+[ext_resource type="Script" path="res://Scripts/Shared/CircularMovement.gd" id="3_t2kfp"]
+[ext_resource type="Script" path="res://Scripts/Enemies/HitboxHazard.gd" id="4_dfdxn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7m1e"]
+atlas = ExtResource("2_j7rdp")
+region = Rect2(0, 0, 73, 63)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_lya0n"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7m1e")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x6mdv"]
+size = Vector2(48, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3nxjc"]
+size = Vector2(52, 56)
+
+[node name="EggFlyer" type="CharacterBody2D" node_paths=PackedStringArray("animation")]
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_bb10r")
+explosion_offset = Vector2(0, -40)
+animation = NodePath("AnimatedSprite2D")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -31)
+sprite_frames = SubResource("SpriteFrames_lya0n")
+
+[node name="CircularMovement" type="Node2D" parent="." node_paths=PackedStringArray("parent")]
+script = ExtResource("3_t2kfp")
+parent = NodePath("..")
+radius = 8
+rotation_speed = 10
+moving = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -31)
+shape = SubResource("RectangleShape2D_x6mdv")
+
+[node name="HitboxHazard" type="Area2D" parent="." node_paths=PackedStringArray("hazard_object")]
+collision_layer = 4
+collision_mask = 2
+script = ExtResource("4_dfdxn")
+hazard_object = NodePath("..")
+damage_type = "Badnik"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxHazard"]
+position = Vector2(1, -32)
+shape = SubResource("RectangleShape2D_3nxjc")
+debug_color = Color(0.701961, 0, 0, 0.419608)

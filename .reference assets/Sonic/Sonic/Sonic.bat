@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Steam\steamapps\common\Aseprite\Aseprite.exe" -b Sonic.ase --save-as {tag}.gif

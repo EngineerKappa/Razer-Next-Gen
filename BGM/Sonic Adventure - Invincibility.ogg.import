@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dw7wq4cdmp6yj"
+path="res://.godot/imported/Sonic Adventure - Invincibility.ogg-167056c5c4d7ad6d9d6a8eb8702d7a4b.oggvorbisstr"
+
+[deps]
+
+source_file="res://BGM/Sonic Adventure - Invincibility.ogg"
+dest_files=["res://.godot/imported/Sonic Adventure - Invincibility.ogg-167056c5c4d7ad6d9d6a8eb8702d7a4b.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

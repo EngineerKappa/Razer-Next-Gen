@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://cfg0nbx3tf2pm"
+path="res://.godot/imported/Sonic the Hedgehog (2006) - Town Mission 04.ogg-95d64edea455330c2d9e95f0d4f78f10.oggvorbisstr"
+
+[deps]
+
+source_file="res://BGM/Sonic the Hedgehog (2006) - Town Mission 04.ogg"
+dest_files=["res://.godot/imported/Sonic the Hedgehog (2006) - Town Mission 04.ogg-95d64edea455330c2d9e95f0d4f78f10.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

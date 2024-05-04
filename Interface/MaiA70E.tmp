@@ -1,0 +1,169 @@
+[gd_scene load_steps=10 format=3 uid="uid://duc04lx7qugmn"]
+
+[ext_resource type="Script" path="res://Interface/MainMenu.gd" id="1_2mfha"]
+[ext_resource type="Material" uid="uid://dmecugxdf67x" path="res://Objects/unlit_add.tres" id="2_0popj"]
+[ext_resource type="Theme" uid="uid://0cfo1escar4o" path="res://Interface/Theme_Menu.tres" id="2_fnqhs"]
+[ext_resource type="Script" path="res://Scripts/Interface/ScreenFade.gd" id="2_rfi6x"]
+[ext_resource type="Texture2D" uid="uid://bwtae2mjmfodd" path="res://Graphics/Interface/MainMenu.png" id="2_ri1ke"]
+[ext_resource type="AudioStream" uid="uid://beo5kmslqtylc" path="res://BGM/SMC_Options_Extras-KM.ogg" id="6_t3wpo"]
+
+[sub_resource type="Animation" id="Animation_avxxd"]
+resource_name = "MenuAppear"
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(5, 0, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.334711)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, 0, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.3)
+}
+
+[sub_resource type="Animation" id="Animation_3o5yv"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MarginContainer:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("MarginContainer:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n064p"]
+_data = {
+"MenuAppear": SubResource("Animation_avxxd"),
+"RESET": SubResource("Animation_3o5yv")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2mfha")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ri1ke")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.537
+anchor_top = 0.55
+anchor_right = 0.537
+anchor_bottom = 0.55
+offset_left = -151.68
+offset_top = -120.0
+offset_right = 104.32
+offset_bottom = 72.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(128, 96)
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+theme = ExtResource("2_fnqhs")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("2_fnqhs")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+focus_mode = 2
+theme = ExtResource("2_fnqhs")
+
+[node name="Adventure Mode" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+focus_neighbor_top = NodePath(".")
+focus_neighbor_bottom = NodePath("../End Game2")
+focus_next = NodePath("../Trial Mode")
+focus_previous = NodePath("../End Game2")
+theme = ExtResource("2_fnqhs")
+text = "Adventure"
+
+[node name="Trial Mode" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_fnqhs")
+disabled = true
+text = "Trial"
+
+[node name="Options" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_fnqhs")
+disabled = true
+text = "Options"
+
+[node name="End Game2" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("2_fnqhs")
+text = "Exit Game"
+
+[node name="FadeIn" type="ColorRect" parent="."]
+material = ExtResource("2_0popj")
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_rfi6x")
+target_color = Color(0, 0, 0, 0)
+start_color = Color(1, 1, 1, 1)
+time_to_fade = 0.7
+free_on_finish = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_n064p")
+}
+autoplay = "MenuAppear"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_t3wpo")
+volume_db = 3.514
+autoplay = true
+
+[node name="FadeOut" type="ColorRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_rfi6x")
+enabled = false
+hang_time = 1.0
+
+[connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Adventure Mode" to="." method="_on_adventure_mode_pressed"]

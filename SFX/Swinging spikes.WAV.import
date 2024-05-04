@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d4k1nlwbgn6wk"
+path="res://.godot/imported/Swinging spikes.WAV-9049b062d5580b30d39b434a0073b818.sample"
+
+[deps]
+
+source_file="res://SFX/Swinging spikes.WAV"
+dest_files=["res://.godot/imported/Swinging spikes.WAV-9049b062d5580b30d39b434a0073b818.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

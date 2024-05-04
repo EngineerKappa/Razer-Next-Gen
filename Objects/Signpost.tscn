@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b58joden3eqgp"]
+
+[ext_resource type="Texture2D" uid="uid://dtxb1tnqgs5of" path="res://Graphics/Objects/signpost.png" id="1_k58nm"]
+[ext_resource type="Texture2D" uid="uid://comlqm50qbgoh" path="res://Graphics/Objects/signpost hand.png" id="2_3wrx2"]
+
+[node name="Signpost" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -22)
+texture = ExtResource("1_k58nm")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(1, -27)
+texture = ExtResource("2_3wrx2")

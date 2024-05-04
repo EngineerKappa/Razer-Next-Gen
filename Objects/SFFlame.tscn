@@ -1,0 +1,82 @@
+[gd_scene load_steps=11 format=3 uid="uid://d6ean7pkovge"]
+
+[ext_resource type="Script" path="res://Scripts/Enemies/Enemy.gd" id="1_b0bkk"]
+[ext_resource type="Texture2D" uid="uid://cfknx787p1mqa" path="res://Graphics/Objects/Levels/Purple Palace/ashar.png" id="2_qu0dk"]
+[ext_resource type="Script" path="res://Scripts/Enemies/HitboxHazard.gd" id="3_8pj01"]
+[ext_resource type="Script" path="res://Scripts/Shared/Gravity.gd" id="4_r4ow8"]
+[ext_resource type="Script" path="res://Scripts/Shared/StateMachine.gd" id="5_683i1"]
+[ext_resource type="Script" path="res://Scripts/Enemies/EnemyPatrol.gd" id="6_ff1y3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ka8tk"]
+size = Vector2(24, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nhk6v"]
+atlas = ExtResource("2_qu0dk")
+region = Rect2(0, 0, 29, 30)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ay3qe"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nhk6v")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ugr0"]
+size = Vector2(24, 30)
+
+[node name="SFFlame" type="CharacterBody2D" node_paths=PackedStringArray("animation")]
+collision_layer = 0
+script = ExtResource("1_b0bkk")
+direction = 1
+animation = NodePath("Animation")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -11)
+shape = SubResource("RectangleShape2D_ka8tk")
+
+[node name="Animation" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -13)
+sprite_frames = SubResource("SpriteFrames_ay3qe")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="." node_paths=PackedStringArray("hazard_object")]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("3_8pj01")
+hazard_object = NodePath("..")
+damage_type = "Spikes"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -13)
+shape = SubResource("RectangleShape2D_8ugr0")
+debug_color = Color(1, 0, 0, 0.509804)
+
+[node name="Gravity" type="Node" parent="." node_paths=PackedStringArray("parent")]
+script = ExtResource("4_r4ow8")
+parent = NodePath("..")
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("parent", "default_state")]
+script = ExtResource("5_683i1")
+parent = NodePath("..")
+default_state = NodePath("EnemyPatrol")
+
+[node name="EnemyPatrol" type="Node" parent="StateMachine" node_paths=PackedStringArray("gravity", "animation", "raycast_left", "raycast_right", "parent")]
+script = ExtResource("6_ff1y3")
+move_speed = 180
+gravity = NodePath("../../Gravity")
+animation = NodePath("../../Animation")
+raycast_left = NodePath("../../RayCastLeft")
+raycast_right = NodePath("../../RayCastRight")
+parent = NodePath("../..")
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(-24, 0)
+target_position = Vector2(0, 20)
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(24, 0)
+target_position = Vector2(0, 20)

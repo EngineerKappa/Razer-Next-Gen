@@ -1,2 +1,4 @@
 # Razer-Next-Gen
- some stupid hedgehog shit 
+some stupid hedgehog nonsense. 
+
+Really messy.
